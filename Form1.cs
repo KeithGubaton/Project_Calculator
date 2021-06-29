@@ -12,9 +12,8 @@ namespace Project_Calculator
 {
     public partial class Calculator : Form
     {
-        String operation = "";
-        Boolean isOperationPressed = false;
-        String num = "";
+        C_Class calcu = new C_Class();
+        
         public Calculator()
         {
             InitializeComponent();
@@ -22,143 +21,100 @@ namespace Project_Calculator
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "0";
-            isOperationPressed = false;
+            AppendButtons("O");
         }
 
         private void btnOne_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "1";
-            isOperationPressed = false;
+            AppendButtons("1");
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "2";
-            isOperationPressed = false;
+            AppendButtons("2");
         }
 
         private void btnThree_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "3";
-            isOperationPressed = false;
+            AppendButtons("3");
         }
 
         private void btnFour_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "4";
-            isOperationPressed = false;
+            AppendButtons("4");
         }
 
         private void btnFive_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "5";
-            isOperationPressed = false;
+            AppendButtons("5");
         }
 
         private void btnSix_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "6";
-            isOperationPressed = false;
+            AppendButtons("6");
         }
 
         private void btnSeven_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "7";
-            isOperationPressed = false;
+            AppendButtons("7");
         }
 
         private void btnEight_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "8";
-            isOperationPressed = false;
+            AppendButtons("8");
         }
 
         private void btnNine_Click(object sender, EventArgs e)
         {
-            if (isOperationPressed)
-            {
-                num = DisplayBox.Text;
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += "9";
-            isOperationPressed = false;
+            AppendButtons("9");
         }
 
-        private void btnPlus_Click(object sender, EventArgs e)
-        {
-            operation = "+";
-            isOperationPressed = true;
-        }
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            if (operation.Equals("+"))
+            if (calcu.Operation.Equals("+"))
             {
-                Add();
+                calcu.NumA = DisplayBox.Text;
+                calcu.Add();
+                DisplayBox.Text = calcu.NumA;
+            }
+
+            if (calcu.Operation.Equals("-"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Subtract();
+                DisplayBox.Text = calcu.NumA;
             }
         }
-        
-        //methods for operations
 
-        private void Add()
+        //method for buttons
+
+        private void AppendButtons(String number)
         {
-            DisplayBox.Text = (float.Parse(num) + float.Parse(DisplayBox.Text)).ToString();
+            if (calcu.IsOperationPressed)
+            {
+                calcu.Num = DisplayBox.Text;
+                DisplayBox.Text = "";
+            }
+
+            DisplayBox.Text += number;
+            calcu.IsOperationPressed = false;
         }
+
+        //operations
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+
+
+            calcu.Operation = "+";
+            calcu.IsOperationPressed = true;
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "-";
+            calcu.IsOperationPressed = true;
+        }
+
     }
 }
