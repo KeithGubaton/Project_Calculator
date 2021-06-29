@@ -21,7 +21,7 @@ namespace Project_Calculator
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            AppendButtons("O");
+            AppendButtons("0");
         }
 
         private void btnOne_Click(object sender, EventArgs e)
@@ -85,6 +85,20 @@ namespace Project_Calculator
                 calcu.Subtract();
                 DisplayBox.Text = calcu.NumA;
             }
+
+            if (calcu.Operation.Equals("*"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Multiply();
+                DisplayBox.Text = calcu.NumA;
+            }
+
+            if (calcu.Operation.Equals("/"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Divide();
+                DisplayBox.Text = calcu.NumA;
+            }
         }
 
         //method for buttons
@@ -116,5 +130,16 @@ namespace Project_Calculator
             calcu.IsOperationPressed = true;
         }
 
+        private void btnMultiply_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "*";
+            calcu.IsOperationPressed = true;
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "/";
+            calcu.IsOperationPressed = true;
+        }
     }
 }

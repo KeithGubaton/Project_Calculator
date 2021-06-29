@@ -47,5 +47,16 @@ namespace Project_Calculator
         {
             NumA = (float.Parse(Num) - float.Parse(NumA)).ToString();
         }
+
+        public void Multiply()
+        {
+            NumA = (float.Parse(Num) * float.Parse(NumA)).ToString();
+        }
+
+        public void Divide()
+        {
+            NumA = (float.Parse(Num) / float.Parse(NumA)).ToString();
+        }
     }
+
 }
