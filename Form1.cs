@@ -148,6 +148,16 @@ namespace Project_Calculator
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
+            if (operation.Equals("+"))
+            {
+                Add();
+            }
+        }
+        
+        //methods for operations
+
+        private void Add()
+        {
             DisplayBox.Text = (float.Parse(num) + float.Parse(DisplayBox.Text)).ToString();
         }
     }
