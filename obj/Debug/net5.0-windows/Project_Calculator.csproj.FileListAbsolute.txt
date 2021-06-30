@@ -1,3 +1,9 @@
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.Calculator.resources
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.csproj.GenerateResource.cache
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.AssemblyInfoInputs.cache
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.AssemblyInfo.cs
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.csproj.CoreCompileInputs.cache
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\bin\Debug\net5.0-windows\Project_Calculator.exe
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\bin\Debug\net5.0-windows\Project_Calculator.deps.json
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\bin\Debug\net5.0-windows\Project_Calculator.runtimeconfig.json
@@ -6,13 +12,7 @@ C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\bin\Debug\n
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\bin\Debug\net5.0-windows\ref\Project_Calculator.dll
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\bin\Debug\net5.0-windows\Project_Calculator.pdb
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.csprojAssemblyReference.cache
-C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.csproj.GenerateResource.cache
-C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.AssemblyInfoInputs.cache
-C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.AssemblyInfo.cs
-C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.csproj.CoreCompileInputs.cache
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.dll
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\ref\Project_Calculator.dll
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.pdb
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.genruntimeconfig.cache
-C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.Calculator.resources

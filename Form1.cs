@@ -99,6 +99,21 @@ namespace Project_Calculator
                 calcu.Divide();
                 DisplayBox.Text = calcu.NumA;
             }
+
+            if (calcu.Operation.Equals("1/x"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Frac();
+                DisplayBox.Text = calcu.NumA;
+            }
+
+            if (calcu.Operation.Equals("x^2"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Sqrd();
+                DisplayBox.Text = calcu.NumA;
+                
+            }
         }
 
         //method for buttons
@@ -139,6 +154,18 @@ namespace Project_Calculator
         private void btnDivide_Click(object sender, EventArgs e)
         {
             calcu.Operation = "/";
+            calcu.IsOperationPressed = true;
+        }
+
+        private void btnFrac_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "1/x";
+            calcu.IsOperationPressed = true;
+        }
+
+        private void btnSqrd_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "x^2";
             calcu.IsOperationPressed = true;
         }
     }

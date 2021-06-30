@@ -70,6 +70,7 @@ namespace Project_Calculator
             this.btnFrac.TabIndex = 0;
             this.btnFrac.Text = "1/x";
             this.btnFrac.UseVisualStyleBackColor = true;
+            this.btnFrac.Click += new System.EventHandler(this.btnFrac_Click);
             // 
             // btnSqrd
             // 
@@ -79,6 +80,7 @@ namespace Project_Calculator
             this.btnSqrd.TabIndex = 1;
             this.btnSqrd.Text = "x^2";
             this.btnSqrd.UseVisualStyleBackColor = true;
+            this.btnSqrd.Click += new System.EventHandler(this.btnSqrd_Click);
             // 
             // btnSqrt
             // 
@@ -352,7 +354,7 @@ namespace Project_Calculator
             this.DisplayBox.BackColor = System.Drawing.SystemColors.Window;
             this.DisplayBox.Location = new System.Drawing.Point(14, 56);
             this.DisplayBox.Name = "DisplayBox";
-            this.DisplayBox.Size = new System.Drawing.Size(294, 23);
+            this.DisplayBox.Size = new System.Drawing.Size(295, 23);
             this.DisplayBox.TabIndex = 27;
             // 
             // Calculator
