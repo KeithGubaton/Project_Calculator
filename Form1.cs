@@ -160,13 +160,13 @@ namespace Project_Calculator
         private void btnFrac_Click(object sender, EventArgs e)
         {
             calcu.Operation = "1/x";
-            calcu.IsOperationPressed = true;
+            calcu.IsOperationPressed = true; //
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
             calcu.Operation = "x^2";
-            calcu.IsOperationPressed = true;
+            calcu.IsOperationPressed = true; //
         }
 
         private void btnDel_Click(object sender, EventArgs e)
