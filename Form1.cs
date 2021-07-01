@@ -182,5 +182,10 @@ namespace Project_Calculator
         {
             DisplayBox.Text = String.Empty;
         }
+
+        private void btnDecimal_Click(object sender, EventArgs e)
+        {
+            DisplayBox.Text += ".";
+        }
     }
 }
