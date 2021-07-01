@@ -168,5 +168,19 @@ namespace Project_Calculator
             calcu.Operation = "x^2";
             calcu.IsOperationPressed = true;
         }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (DisplayBox.Text.Length > 0)
+            {
+                DisplayBox.Text = DisplayBox.Text.Remove(DisplayBox.Text.Length - 1, 1);
+            }
+
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            DisplayBox.Text = String.Empty;
+        }
     }
 }

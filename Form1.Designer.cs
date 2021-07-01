@@ -148,6 +148,7 @@ namespace Project_Calculator
             this.btnCE.TabIndex = 8;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // btnClr
             // 
@@ -186,6 +187,7 @@ namespace Project_Calculator
             this.btnDel.TabIndex = 12;
             this.btnDel.Text = "<--";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnMinus
             // 
