@@ -36,7 +36,7 @@ namespace Project_Calculator
             this.btnSeven = new System.Windows.Forms.Button();
             this.btnEight = new System.Windows.Forms.Button();
             this.btnNine = new System.Windows.Forms.Button();
-            this.btnModulus = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
             this.btnCE = new System.Windows.Forms.Button();
             this.btnClr = new System.Windows.Forms.Button();
             this.btnSix = new System.Windows.Forms.Button();
@@ -132,14 +132,15 @@ namespace Project_Calculator
             this.btnNine.UseVisualStyleBackColor = true;
             this.btnNine.Click += new System.EventHandler(this.btnNine_Click);
             // 
-            // btnModulus
+            // btnPercent
             // 
-            this.btnModulus.Location = new System.Drawing.Point(14, 146);
-            this.btnModulus.Name = "btnModulus";
-            this.btnModulus.Size = new System.Drawing.Size(69, 43);
-            this.btnModulus.TabIndex = 7;
-            this.btnModulus.Text = "%";
-            this.btnModulus.UseVisualStyleBackColor = true;
+            this.btnPercent.Location = new System.Drawing.Point(14, 146);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(69, 43);
+            this.btnPercent.TabIndex = 7;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = true;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
             // 
             // btnCE
             // 
@@ -388,7 +389,7 @@ namespace Project_Calculator
             this.Controls.Add(this.btnSix);
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.btnCE);
-            this.Controls.Add(this.btnModulus);
+            this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.btnNine);
             this.Controls.Add(this.btnEight);
             this.Controls.Add(this.btnSeven);
@@ -412,7 +413,7 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnSeven;
         private System.Windows.Forms.Button btnEight;
         private System.Windows.Forms.Button btnNine;
-        private System.Windows.Forms.Button btnModulus;
+        private System.Windows.Forms.Button btnPercent;
         private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnClr;
         private System.Windows.Forms.Button btnSix;

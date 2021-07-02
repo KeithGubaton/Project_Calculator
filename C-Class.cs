@@ -85,9 +85,16 @@ namespace Project_Calculator
 
         public void Sqrt()
         {
-            double y = float.Parse(NumA);
-            NumA = Math.Sqrt(y).ToString();
+           // NumA = double.Parse(NumA);
+           // NumA = Math.Sqrt(NumA);//
+
+        }
+
+        public void Percent()
+        {
+            NumA = (float.Parse(NumA) / 100).ToString();
         }
     }
+
 
 }

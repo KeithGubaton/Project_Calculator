@@ -192,6 +192,12 @@ namespace Project_Calculator
 
         }
 
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "%";
+            calcu.IsOperationPressed = true;
+        }
+
         private void btnCE_Click(object sender, EventArgs e)
         {
             DisplayBox.Text = String.Empty;
@@ -201,5 +207,6 @@ namespace Project_Calculator
         {
             
         }
+
     }
 }
