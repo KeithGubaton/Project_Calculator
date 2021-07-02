@@ -82,6 +82,12 @@ namespace Project_Calculator
         {
             NumA = (float.Parse(NumA) * float.Parse(NumA)).ToString();
         }
+
+        public void Sqrt()
+        {
+            double y = float.Parse(NumA);
+            NumA = Math.Sqrt(y).ToString();
+        }
     }
 
 }

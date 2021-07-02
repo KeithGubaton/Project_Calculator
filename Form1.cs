@@ -166,7 +166,7 @@ namespace Project_Calculator
         private void btnSqrd_Click(object sender, EventArgs e)
         {
             calcu.Operation = "x^2";
-            calcu.IsOperationPressed = true; //
+            calcu.IsOperationPressed = true; 
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -186,6 +186,12 @@ namespace Project_Calculator
         private void btnDecimal_Click(object sender, EventArgs e)
         {
             DisplayBox.Text += ".";
+        }
+
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "sqrt";
+            calcu.IsOperationPressed = true;//
         }
     }
 }

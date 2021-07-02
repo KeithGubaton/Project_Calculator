@@ -90,6 +90,7 @@ namespace Project_Calculator
             this.btnSqrt.TabIndex = 2;
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.Click += new System.EventHandler(this.btnSqrt_Click);
             // 
             // btnDivide
             // 
