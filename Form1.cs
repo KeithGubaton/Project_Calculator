@@ -160,13 +160,27 @@ namespace Project_Calculator
         private void btnFrac_Click(object sender, EventArgs e)
         {
             calcu.Operation = "1/x";
-            calcu.IsOperationPressed = true; //
+            calcu.IsOperationPressed = true;
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
             calcu.Operation = "x^2";
             calcu.IsOperationPressed = true; 
+        }
+
+        private void btnDecimal_Click(object sender, EventArgs e)
+        {
+            if (!DisplayBox.Text.Contains("."))
+            {
+                DisplayBox.Text += "."; //avoid using the decimal point once it is clicked
+            }
+        }
+
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "sqrt";
+            calcu.IsOperationPressed = true;//
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -183,15 +197,9 @@ namespace Project_Calculator
             DisplayBox.Text = String.Empty;
         }
 
-        private void btnDecimal_Click(object sender, EventArgs e)
+        private void btnSign_Click(object sender, EventArgs e)
         {
-            DisplayBox.Text += ".";
-        }
-
-        private void btnSqrt_Click(object sender, EventArgs e)
-        {
-            calcu.Operation = "sqrt";
-            calcu.IsOperationPressed = true;//
+            
         }
     }
 }

@@ -278,6 +278,7 @@ namespace Project_Calculator
             this.btnSign.TabIndex = 18;
             this.btnSign.Text = "+/-";
             this.btnSign.UseVisualStyleBackColor = true;
+            this.btnSign.Click += new System.EventHandler(this.btnSign_Click);
             // 
             // button28
             // 
