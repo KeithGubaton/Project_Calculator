@@ -173,7 +173,7 @@ namespace Project_Calculator
         {
             if (!DisplayBox.Text.Contains("."))
             {
-                DisplayBox.Text += "."; //avoid using the decimal point once it is clicked
+                DisplayBox.Text += "."; // to avoid using the decimal point once it is clicked
             }
         }
 
