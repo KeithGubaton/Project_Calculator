@@ -205,8 +205,19 @@ namespace Project_Calculator
 
         private void btnSign_Click(object sender, EventArgs e)
         {
-            
+            if (DisplayBox.Text.Contains("-"))
+            {
+                DisplayBox.Text = DisplayBox.Text.Remove(0, 1);
+            }
+            else
+            {
+                DisplayBox.Text = "-" + DisplayBox.Text;
+            }
         }
 
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            DisplayBox.Text = "0";
+        }
     }
 }

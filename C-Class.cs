@@ -21,7 +21,7 @@ namespace Project_Calculator
         private string sqr = "";
         private Double dobol;
         private string result = "";
-
+        private float ewan;
         
         public string Num 
         { 
@@ -52,6 +52,8 @@ namespace Project_Calculator
         public float A { get => a; set => a = value; }
         public string Sqr { get => sqr; set => sqr = value; }
         public string Result { get => result; set => result = value; }
+        public float Ewan { get => ewan; set => ewan = value; }
+        
 
         public void Add()
         {
@@ -85,14 +87,19 @@ namespace Project_Calculator
 
         public void Sqrt()
         {
-           // NumA = double.Parse(NumA);
-           // NumA = Math.Sqrt(NumA);//
-
+            dobol = float.Parse(NumA);
+            double hatdog = float.Parse(NumA);
+            NumA = Math.Sqrt(hatdog).ToString();
         }
 
         public void Percent()
         {
             NumA = (float.Parse(NumA) / 100).ToString();
+        }
+
+        public void Sign()
+        {
+            //NumA = (float.Parse(NumA) * -1).ToString();
         }
     }
 

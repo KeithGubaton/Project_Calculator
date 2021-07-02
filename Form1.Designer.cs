@@ -160,6 +160,7 @@ namespace Project_Calculator
             this.btnClr.TabIndex = 9;
             this.btnClr.Text = "C";
             this.btnClr.UseVisualStyleBackColor = true;
+            this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
             // 
             // btnSix
             // 
