@@ -94,7 +94,7 @@ namespace Project_Calculator
 
         public void Percent()
         {
-            NumA = (float.Parse(NumA) / 100).ToString();
+            NumA = (float.Parse(NumA) / 100).ToString();//
         }
 
         public void Sign()

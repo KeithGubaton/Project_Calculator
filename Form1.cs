@@ -114,6 +114,14 @@ namespace Project_Calculator
                 DisplayBox.Text = calcu.NumA;
                 
             }
+
+            if (calcu.Operation.Equals("%"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Percent();
+                DisplayBox.Text = calcu.NumA;
+
+            }
         }
 
         //method for buttons
@@ -195,7 +203,7 @@ namespace Project_Calculator
         private void btnPercent_Click(object sender, EventArgs e)
         {
             calcu.Operation = "%";
-            calcu.IsOperationPressed = true;
+            calcu.IsOperationPressed = true;//
         }
 
         private void btnCE_Click(object sender, EventArgs e)
@@ -217,7 +225,7 @@ namespace Project_Calculator
 
         private void btnClr_Click(object sender, EventArgs e)
         {
-            DisplayBox.Text = "0";
+            DisplayBox.Text = "0";//
         }
     }
 }
