@@ -80,7 +80,7 @@ namespace Project_Calculator
 
         public void Sqrd()
         {
-            
+            NumA = (float.Parse(NumA) * float.Parse(NumA)).ToString();
         }
     }
 
