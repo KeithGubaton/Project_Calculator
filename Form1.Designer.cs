@@ -64,6 +64,10 @@ namespace Project_Calculator
             // 
             // btnFrac
             // 
+            this.btnFrac.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFrac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFrac.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFrac.ForeColor = System.Drawing.Color.Green;
             this.btnFrac.Location = new System.Drawing.Point(14, 192);
             this.btnFrac.Name = "btnFrac";
             this.btnFrac.Size = new System.Drawing.Size(69, 43);
@@ -74,6 +78,10 @@ namespace Project_Calculator
             // 
             // btnSqrd
             // 
+            this.btnSqrd.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSqrd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSqrd.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSqrd.ForeColor = System.Drawing.Color.Green;
             this.btnSqrd.Location = new System.Drawing.Point(89, 192);
             this.btnSqrd.Name = "btnSqrd";
             this.btnSqrd.Size = new System.Drawing.Size(69, 43);
@@ -84,6 +92,10 @@ namespace Project_Calculator
             // 
             // btnSqrt
             // 
+            this.btnSqrt.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSqrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSqrt.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSqrt.ForeColor = System.Drawing.Color.Green;
             this.btnSqrt.Location = new System.Drawing.Point(164, 192);
             this.btnSqrt.Name = "btnSqrt";
             this.btnSqrt.Size = new System.Drawing.Size(69, 43);
@@ -94,6 +106,10 @@ namespace Project_Calculator
             // 
             // btnDivide
             // 
+            this.btnDivide.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDivide.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDivide.ForeColor = System.Drawing.Color.Green;
             this.btnDivide.Location = new System.Drawing.Point(239, 146);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(69, 43);
@@ -104,6 +120,10 @@ namespace Project_Calculator
             // 
             // btnSeven
             // 
+            this.btnSeven.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeven.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSeven.ForeColor = System.Drawing.Color.Green;
             this.btnSeven.Location = new System.Drawing.Point(14, 238);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(69, 43);
@@ -114,6 +134,10 @@ namespace Project_Calculator
             // 
             // btnEight
             // 
+            this.btnEight.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEight.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEight.ForeColor = System.Drawing.Color.Green;
             this.btnEight.Location = new System.Drawing.Point(89, 238);
             this.btnEight.Name = "btnEight";
             this.btnEight.Size = new System.Drawing.Size(69, 43);
@@ -124,6 +148,10 @@ namespace Project_Calculator
             // 
             // btnNine
             // 
+            this.btnNine.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNine.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNine.ForeColor = System.Drawing.Color.Green;
             this.btnNine.Location = new System.Drawing.Point(164, 238);
             this.btnNine.Name = "btnNine";
             this.btnNine.Size = new System.Drawing.Size(69, 43);
@@ -134,6 +162,10 @@ namespace Project_Calculator
             // 
             // btnPercent
             // 
+            this.btnPercent.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPercent.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPercent.ForeColor = System.Drawing.Color.Green;
             this.btnPercent.Location = new System.Drawing.Point(14, 146);
             this.btnPercent.Name = "btnPercent";
             this.btnPercent.Size = new System.Drawing.Size(69, 43);
@@ -144,6 +176,10 @@ namespace Project_Calculator
             // 
             // btnCE
             // 
+            this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCE.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCE.ForeColor = System.Drawing.Color.Green;
             this.btnCE.Location = new System.Drawing.Point(89, 146);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(69, 43);
@@ -154,6 +190,10 @@ namespace Project_Calculator
             // 
             // btnClr
             // 
+            this.btnClr.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClr.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClr.ForeColor = System.Drawing.Color.Green;
             this.btnClr.Location = new System.Drawing.Point(164, 146);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(69, 43);
@@ -164,6 +204,10 @@ namespace Project_Calculator
             // 
             // btnSix
             // 
+            this.btnSix.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSix.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSix.ForeColor = System.Drawing.Color.Green;
             this.btnSix.Location = new System.Drawing.Point(164, 284);
             this.btnSix.Name = "btnSix";
             this.btnSix.Size = new System.Drawing.Size(69, 43);
@@ -174,6 +218,10 @@ namespace Project_Calculator
             // 
             // btnMultiply
             // 
+            this.btnMultiply.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMultiply.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMultiply.ForeColor = System.Drawing.Color.Green;
             this.btnMultiply.Location = new System.Drawing.Point(239, 192);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(69, 43);
@@ -184,6 +232,10 @@ namespace Project_Calculator
             // 
             // btnDel
             // 
+            this.btnDel.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDel.ForeColor = System.Drawing.Color.Green;
             this.btnDel.Location = new System.Drawing.Point(239, 97);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(69, 43);
@@ -194,6 +246,10 @@ namespace Project_Calculator
             // 
             // btnMinus
             // 
+            this.btnMinus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMinus.ForeColor = System.Drawing.Color.Green;
             this.btnMinus.Location = new System.Drawing.Point(239, 238);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(69, 43);
@@ -204,6 +260,10 @@ namespace Project_Calculator
             // 
             // btnFour
             // 
+            this.btnFour.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFour.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFour.ForeColor = System.Drawing.Color.Green;
             this.btnFour.Location = new System.Drawing.Point(14, 284);
             this.btnFour.Name = "btnFour";
             this.btnFour.Size = new System.Drawing.Size(69, 43);
@@ -214,6 +274,10 @@ namespace Project_Calculator
             // 
             // btnFive
             // 
+            this.btnFive.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFive.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFive.ForeColor = System.Drawing.Color.Green;
             this.btnFive.Location = new System.Drawing.Point(89, 284);
             this.btnFive.Name = "btnFive";
             this.btnFive.Size = new System.Drawing.Size(69, 43);
@@ -224,6 +288,10 @@ namespace Project_Calculator
             // 
             // btnOne
             // 
+            this.btnOne.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOne.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOne.ForeColor = System.Drawing.Color.Green;
             this.btnOne.Location = new System.Drawing.Point(14, 330);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(69, 43);
@@ -234,6 +302,11 @@ namespace Project_Calculator
             // 
             // btnTwo
             // 
+            this.btnTwo.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTwo.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTwo.ForeColor = System.Drawing.Color.Green;
             this.btnTwo.Location = new System.Drawing.Point(89, 330);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.Size = new System.Drawing.Size(69, 43);
@@ -244,6 +317,10 @@ namespace Project_Calculator
             // 
             // btnThree
             // 
+            this.btnThree.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThree.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnThree.ForeColor = System.Drawing.Color.Green;
             this.btnThree.Location = new System.Drawing.Point(164, 330);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(69, 43);
@@ -254,6 +331,10 @@ namespace Project_Calculator
             // 
             // btnPlus
             // 
+            this.btnPlus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlus.ForeColor = System.Drawing.Color.Green;
             this.btnPlus.Location = new System.Drawing.Point(239, 284);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(69, 43);
@@ -264,6 +345,10 @@ namespace Project_Calculator
             // 
             // btnEquals
             // 
+            this.btnEquals.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquals.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEquals.ForeColor = System.Drawing.Color.Green;
             this.btnEquals.Location = new System.Drawing.Point(239, 330);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(69, 89);
@@ -274,6 +359,10 @@ namespace Project_Calculator
             // 
             // btnSign
             // 
+            this.btnSign.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSign.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSign.ForeColor = System.Drawing.Color.Green;
             this.btnSign.Location = new System.Drawing.Point(14, 376);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(69, 43);
@@ -311,6 +400,10 @@ namespace Project_Calculator
             // 
             // btnZero
             // 
+            this.btnZero.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZero.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnZero.ForeColor = System.Drawing.Color.Green;
             this.btnZero.Location = new System.Drawing.Point(89, 376);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(69, 43);
@@ -321,6 +414,10 @@ namespace Project_Calculator
             // 
             // btnDecimal
             // 
+            this.btnDecimal.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDecimal.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDecimal.ForeColor = System.Drawing.Color.Green;
             this.btnDecimal.Location = new System.Drawing.Point(164, 376);
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(69, 43);
@@ -331,6 +428,10 @@ namespace Project_Calculator
             // 
             // btnMplus
             // 
+            this.btnMplus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMplus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMplus.ForeColor = System.Drawing.Color.Green;
             this.btnMplus.Location = new System.Drawing.Point(14, 96);
             this.btnMplus.Name = "btnMplus";
             this.btnMplus.Size = new System.Drawing.Size(69, 43);
@@ -340,6 +441,10 @@ namespace Project_Calculator
             // 
             // btnMminus
             // 
+            this.btnMminus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMminus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMminus.ForeColor = System.Drawing.Color.Green;
             this.btnMminus.Location = new System.Drawing.Point(89, 96);
             this.btnMminus.Name = "btnMminus";
             this.btnMminus.Size = new System.Drawing.Size(69, 43);
@@ -349,26 +454,35 @@ namespace Project_Calculator
             // 
             // btnMsave
             // 
+            this.btnMsave.BackColor = System.Drawing.Color.Black;
+            this.btnMsave.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMsave.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMsave.ForeColor = System.Drawing.Color.Green;
             this.btnMsave.Location = new System.Drawing.Point(164, 96);
             this.btnMsave.Name = "btnMsave";
             this.btnMsave.Size = new System.Drawing.Size(69, 43);
             this.btnMsave.TabIndex = 26;
             this.btnMsave.Text = "MS";
-            this.btnMsave.UseVisualStyleBackColor = true;
+            this.btnMsave.UseVisualStyleBackColor = false;
             // 
             // DisplayBox
             // 
-            this.DisplayBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DisplayBox.Location = new System.Drawing.Point(14, 56);
+            this.DisplayBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.DisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DisplayBox.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisplayBox.ForeColor = System.Drawing.Color.Green;
+            this.DisplayBox.Location = new System.Drawing.Point(14, 42);
             this.DisplayBox.Name = "DisplayBox";
-            this.DisplayBox.Size = new System.Drawing.Size(295, 23);
+            this.DisplayBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DisplayBox.Size = new System.Drawing.Size(294, 32);
             this.DisplayBox.TabIndex = 27;
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(321, 434);
             this.Controls.Add(this.DisplayBox);
             this.Controls.Add(this.btnMsave);

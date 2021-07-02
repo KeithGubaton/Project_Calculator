@@ -16,7 +16,6 @@ namespace Project_Calculator
         private Boolean isOperationPressed = false;
         private String num = "";
         private String numA = "";
-        private Double dobol;
         
         public string Num 
         { 
@@ -38,12 +37,7 @@ namespace Project_Calculator
             get => numA; 
             set => numA = value; 
         }
-        public double Dobol 
-        { 
-            get => dobol; 
-            set => dobol = value; 
-        }
-        
+ 
         //methods for operations
         public void Add()
         {
@@ -77,7 +71,6 @@ namespace Project_Calculator
 
         public void Sqrt()
         {
-            //dobol = float.Parse(NumA);
             double numero = float.Parse(NumA);
             NumA = Math.Sqrt(numero).ToString();
         }

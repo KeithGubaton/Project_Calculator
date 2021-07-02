@@ -16,3 +16,4 @@ C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\n
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\ref\Project_Calculator.dll
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.pdb
 C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.genruntimeconfig.cache
+C:\Users\Angeline\source\repos\Project_Calculator\Project_Calculator\obj\Debug\net5.0-windows\Project_Calculator.Properties.Resources.resources

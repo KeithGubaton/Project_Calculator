@@ -112,7 +112,7 @@ namespace Project_Calculator
                 calcu.NumA = DisplayBox.Text;
                 calcu.Sqrd();
                 DisplayBox.Text = calcu.NumA;
-                
+
             }
 
             if (calcu.Operation.Equals("%"))
@@ -137,6 +137,11 @@ namespace Project_Calculator
                 calcu.Sign();
                 DisplayBox.Text = calcu.NumA;
 
+            }
+
+            if (DisplayBox.Text.Length > 15)
+            {
+                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
             }
         }
 
