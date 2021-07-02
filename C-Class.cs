@@ -10,18 +10,13 @@ namespace Project_Calculator
     {
         // class for calculator which have the methods
         // turn private into public
-        //encapsulate private variables
+        // encapsulate private variables
 
         private String operation = "";
         private Boolean isOperationPressed = false;
         private String num = "";
         private String numA = "";
-        private float a;
-        private float b;
-        private string sqr = "";
         private Double dobol;
-        private string result = "";
-        private float ewan;
         
         public string Num 
         { 
@@ -48,13 +43,8 @@ namespace Project_Calculator
             get => dobol; 
             set => dobol = value; 
         }
-        public float B { get => b; set => b = value; }
-        public float A { get => a; set => a = value; }
-        public string Sqr { get => sqr; set => sqr = value; }
-        public string Result { get => result; set => result = value; }
-        public float Ewan { get => ewan; set => ewan = value; }
         
-
+        //methods for operations
         public void Add()
         {
             NumA = (float.Parse(Num) + float.Parse(NumA)).ToString();
@@ -87,21 +77,26 @@ namespace Project_Calculator
 
         public void Sqrt()
         {
-            dobol = float.Parse(NumA);
-            double hatdog = float.Parse(NumA);
-            NumA = Math.Sqrt(hatdog).ToString();
+            //dobol = float.Parse(NumA);
+            double numero = float.Parse(NumA);
+            NumA = Math.Sqrt(numero).ToString();
         }
 
         public void Percent()
         {
-            NumA = (float.Parse(NumA) / 100).ToString();//
+            NumA = (float.Parse(NumA) / 100).ToString();
         }
 
         public void Sign()
         {
-            //NumA = (float.Parse(NumA) * -1).ToString();
+            if (NumA.Contains("-"))
+            {
+                NumA = NumA.Remove(0, 1);
+            }
+            else
+            {
+                NumA = "-" + NumA;
+            }
         }
     }
-
-
 }

@@ -122,6 +122,22 @@ namespace Project_Calculator
                 DisplayBox.Text = calcu.NumA;
 
             }
+
+            if (calcu.Operation.Equals("sqrt"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Sqrt();
+                DisplayBox.Text = calcu.NumA;
+
+            }
+
+            if (calcu.Operation.Equals("+/-"))
+            {
+                calcu.NumA = DisplayBox.Text;
+                calcu.Sign();
+                DisplayBox.Text = calcu.NumA;
+
+            }
         }
 
         //method for buttons
@@ -177,6 +193,24 @@ namespace Project_Calculator
             calcu.IsOperationPressed = true; 
         }
 
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "sqrt";
+            calcu.IsOperationPressed = true;
+        }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "%";
+            calcu.IsOperationPressed = true;
+        }
+
+        private void btnSign_Click(object sender, EventArgs e)
+        {
+            calcu.Operation = "+/-";
+            calcu.IsOperationPressed = true;
+        }
+
         private void btnDecimal_Click(object sender, EventArgs e)
         {
             if (!DisplayBox.Text.Contains("."))
@@ -185,42 +219,18 @@ namespace Project_Calculator
             }
         }
 
-        private void btnSqrt_Click(object sender, EventArgs e)
-        {
-            calcu.Operation = "sqrt";
-            calcu.IsOperationPressed = true;//
-        }
-
         private void btnDel_Click(object sender, EventArgs e)
         {
             if (DisplayBox.Text.Length > 0)
             {
-                DisplayBox.Text = DisplayBox.Text.Remove(DisplayBox.Text.Length - 1, 1);
+                DisplayBox.Text = DisplayBox.Text.Remove(DisplayBox.Text.Length - 1, 1);//
             }
 
-        }
-
-        private void btnPercent_Click(object sender, EventArgs e)
-        {
-            calcu.Operation = "%";
-            calcu.IsOperationPressed = true;//
         }
 
         private void btnCE_Click(object sender, EventArgs e)
         {
             DisplayBox.Text = String.Empty;
-        }
-
-        private void btnSign_Click(object sender, EventArgs e)
-        {
-            if (DisplayBox.Text.Contains("-"))
-            {
-                DisplayBox.Text = DisplayBox.Text.Remove(0, 1);
-            }
-            else
-            {
-                DisplayBox.Text = "-" + DisplayBox.Text;
-            }
         }
 
         private void btnClr_Click(object sender, EventArgs e)
