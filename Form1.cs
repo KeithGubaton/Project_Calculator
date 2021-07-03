@@ -112,7 +112,6 @@ namespace Project_Calculator
                 calcu.NumA = DisplayBox.Text;
                 calcu.Sqrd();
                 DisplayBox.Text = calcu.NumA;
-
             }
 
             if (calcu.Operation.Equals("%"))
@@ -120,7 +119,6 @@ namespace Project_Calculator
                 calcu.NumA = DisplayBox.Text;
                 calcu.Percent();
                 DisplayBox.Text = calcu.NumA;
-
             }
 
             if (calcu.Operation.Equals("sqrt"))
@@ -128,7 +126,6 @@ namespace Project_Calculator
                 calcu.NumA = DisplayBox.Text;
                 calcu.Sqrt();
                 DisplayBox.Text = calcu.NumA;
-
             }
 
             if (calcu.Operation.Equals("+/-"))
@@ -136,7 +133,6 @@ namespace Project_Calculator
                 calcu.NumA = DisplayBox.Text;
                 calcu.Sign();
                 DisplayBox.Text = calcu.NumA;
-
             }
 
             if (DisplayBox.Text.Length > 15)
@@ -231,12 +227,21 @@ namespace Project_Calculator
             {
                 DisplayBox.Text = DisplayBox.Text.Remove(DisplayBox.Text.Length - 1, 1);//
             }
-
         }
 
         private void btnCE_Click(object sender, EventArgs e)
         {
-            DisplayBox.Text = String.Empty;
+            calcu.NumA = DisplayBox.Text;
+            DisplayBox.Text = calcu.NumA;
+
+            if (DisplayBox.Text == calcu.NumA)
+            {
+                DisplayBox.Text = String.Empty;
+            }
+            else
+            {
+                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
+            }
         }
 
         private void btnClr_Click(object sender, EventArgs e)
