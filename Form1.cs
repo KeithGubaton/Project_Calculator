@@ -220,7 +220,8 @@ namespace Project_Calculator
         {
             if (!DisplayBox.Text.Contains("."))
             {
-                DisplayBox.Text += "."; // to avoid using the decimal point once it is clicked
+                DisplayBox.Text += "."; 
+                // to avoid using the decimal point once it is clicked.
             }
         }
 
@@ -241,6 +242,21 @@ namespace Project_Calculator
         private void btnClr_Click(object sender, EventArgs e)
         {
             DisplayBox.Text = "0";//
+        }
+
+        private void btnMplus_Click(object sender, EventArgs e)
+        {
+            //Memory Add
+        }
+
+        private void btnMminus_Click(object sender, EventArgs e)
+        {
+            //Memory Remove
+        }
+
+        private void btnMsave_Click(object sender, EventArgs e)
+        {
+            //Memory Save
         }
     }
 }

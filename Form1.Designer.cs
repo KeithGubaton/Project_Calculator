@@ -438,6 +438,7 @@ namespace Project_Calculator
             this.btnMplus.TabIndex = 24;
             this.btnMplus.Text = "M+";
             this.btnMplus.UseVisualStyleBackColor = true;
+            this.btnMplus.Click += new System.EventHandler(this.btnMplus_Click);
             // 
             // btnMminus
             // 
@@ -451,6 +452,7 @@ namespace Project_Calculator
             this.btnMminus.TabIndex = 25;
             this.btnMminus.Text = "M-";
             this.btnMminus.UseVisualStyleBackColor = true;
+            this.btnMminus.Click += new System.EventHandler(this.btnMminus_Click);
             // 
             // btnMsave
             // 
@@ -465,6 +467,7 @@ namespace Project_Calculator
             this.btnMsave.TabIndex = 26;
             this.btnMsave.Text = "MS";
             this.btnMsave.UseVisualStyleBackColor = false;
+            this.btnMsave.Click += new System.EventHandler(this.btnMsave_Click);
             // 
             // DisplayBox
             // 
