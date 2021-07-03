@@ -229,7 +229,7 @@ namespace Project_Calculator
             }
         }
 
-        private void btnCE_Click(object sender, EventArgs e)
+        private void btnCE_Click(object sender, EventArgs e)//
         {
             calcu.NumA = DisplayBox.Text;
             DisplayBox.Text = calcu.NumA;
