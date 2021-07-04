@@ -99,5 +99,13 @@ namespace Project_Calculator
                 NumA += ".";
             }
         }
+
+        public void Del()
+        {
+            if (NumA.Length > 0)
+            {
+                NumA = NumA.Remove(NumA.Length - 1, 1);
+            }
+        }
     }
 }

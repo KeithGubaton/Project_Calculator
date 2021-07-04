@@ -221,19 +221,18 @@ namespace Project_Calculator
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text.Length > 0)
-            {
-                DisplayBox.Text = DisplayBox.Text.Remove(DisplayBox.Text.Length - 1, 1);//
-            }
+            calcu.NumA = DisplayBox.Text;
+            calcu.Del();
+            DisplayBox.Text = calcu.NumA;
         }
 
-        private void btnCE_Click(object sender, EventArgs e)
+        private void btnCE_Click(object sender, EventArgs e)///
         {
             DisplayBox.Text = String.Empty;
             DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
-        private void btnClr_Click(object sender, EventArgs e)
+        private void btnClr_Click(object sender, EventArgs e)///
         {
             DisplayBox.Clear();
             DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
