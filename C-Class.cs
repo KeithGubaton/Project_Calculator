@@ -16,6 +16,7 @@ namespace Project_Calculator
         private Boolean isOperationPressed = false;
         private String num = "";
         private String numA = "";
+        private string result = "";
         
         public string Num 
         { 
@@ -37,7 +38,12 @@ namespace Project_Calculator
             get => numA; 
             set => numA = value; 
         }
- 
+        public string Result 
+        { 
+            get => result; 
+            set => result = value; 
+        }
+
         //methods for operations
         public void Add()
         {

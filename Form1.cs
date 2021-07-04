@@ -72,6 +72,8 @@ namespace Project_Calculator
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
+            label.Text = System.Convert.ToString(calcu.Num) + " " + calcu.Operation;
+
             if (calcu.Operation.Equals("+"))
             {
                 calcu.NumA = DisplayBox.Text;
@@ -139,9 +141,6 @@ namespace Project_Calculator
             {
                 DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
             }
-
-            label.Text = System.Convert.ToString(calcu.Num) + " " +
-                calcu.Operation;
         }
 
         //method for buttons
