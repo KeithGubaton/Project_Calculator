@@ -238,15 +238,12 @@ namespace Project_Calculator
             {
                 DisplayBox.Text = String.Empty;
             }
-            else
-            {
-                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
-            }
         }
 
         private void btnClr_Click(object sender, EventArgs e)
         {
-            DisplayBox.Text = "0";//
+            DisplayBox.Clear();
+            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
