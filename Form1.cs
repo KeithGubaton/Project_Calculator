@@ -140,7 +140,8 @@ namespace Project_Calculator
                 DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
             }
 
-            label.Text = System.Convert.ToString(calcu.Num) + "     " + calcu.Operation;
+            label.Text = System.Convert.ToString(calcu.Num) + " " +
+                calcu.Operation;
         }
 
         //method for buttons
