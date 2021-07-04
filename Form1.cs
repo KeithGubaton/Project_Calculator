@@ -206,6 +206,7 @@ namespace Project_Calculator
             calcu.IsOperationPressed = true;
         }
 
+        //(Add-ons?)
         private void btnSign_Click(object sender, EventArgs e)
         {
             calcu.Operation = "+/-";
@@ -219,6 +220,7 @@ namespace Project_Calculator
             DisplayBox.Text = calcu.NumA;         
         }
 
+        //Miscellaneous
         private void btnDel_Click(object sender, EventArgs e)
         {
             calcu.NumA = DisplayBox.Text;

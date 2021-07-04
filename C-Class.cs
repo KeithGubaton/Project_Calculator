@@ -80,6 +80,7 @@ namespace Project_Calculator
             NumA = (float.Parse(NumA) / 100).ToString();
         }
 
+        //Sign & Decimal (Add-ons?)
         public void Sign()
         {
             if (NumA.Contains("-"))
@@ -100,6 +101,7 @@ namespace Project_Calculator
             }
         }
 
+        //Miscellaneous
         public void Del()
         {
             if (NumA.Length > 0)

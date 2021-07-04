@@ -29,6 +29,7 @@ namespace Project_Calculator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.btnFrac = new System.Windows.Forms.Button();
             this.btnSqrd = new System.Windows.Forms.Button();
             this.btnSqrt = new System.Windows.Forms.Button();
@@ -515,6 +516,7 @@ namespace Project_Calculator
             this.Controls.Add(this.btnSqrt);
             this.Controls.Add(this.btnSqrd);
             this.Controls.Add(this.btnFrac);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);
