@@ -231,19 +231,14 @@ namespace Project_Calculator
 
         private void btnCE_Click(object sender, EventArgs e)//
         {
-            calcu.NumA = DisplayBox.Text;
-            DisplayBox.Text = calcu.NumA;
-
-            if (DisplayBox.Text == calcu.NumA)
-            {
-                DisplayBox.Text = String.Empty;
-            }
+            DisplayBox.Text = String.Empty;
+            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
         private void btnClr_Click(object sender, EventArgs e)
         {
             DisplayBox.Clear();
-            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
+            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);//
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
