@@ -91,5 +91,13 @@ namespace Project_Calculator
                 NumA = "-" + NumA;
             }
         }
+
+        public void Decimal()
+        {
+            if (!NumA.Contains("."))
+            {
+                NumA += ".";
+            }
+        }
     }
 }

@@ -58,7 +58,7 @@ namespace Project_Calculator
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnMplus = new System.Windows.Forms.Button();
             this.btnMminus = new System.Windows.Forms.Button();
-            this.btnMsave = new System.Windows.Forms.Button();
+            this.btnMstore = new System.Windows.Forms.Button();
             this.DisplayBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -454,20 +454,20 @@ namespace Project_Calculator
             this.btnMminus.UseVisualStyleBackColor = true;
             this.btnMminus.Click += new System.EventHandler(this.btnMminus_Click);
             // 
-            // btnMsave
+            // btnMstore
             // 
-            this.btnMsave.BackColor = System.Drawing.Color.Black;
-            this.btnMsave.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnMsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMsave.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMsave.ForeColor = System.Drawing.Color.Green;
-            this.btnMsave.Location = new System.Drawing.Point(164, 96);
-            this.btnMsave.Name = "btnMsave";
-            this.btnMsave.Size = new System.Drawing.Size(69, 43);
-            this.btnMsave.TabIndex = 26;
-            this.btnMsave.Text = "MS";
-            this.btnMsave.UseVisualStyleBackColor = false;
-            this.btnMsave.Click += new System.EventHandler(this.btnMsave_Click);
+            this.btnMstore.BackColor = System.Drawing.Color.Black;
+            this.btnMstore.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMstore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMstore.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMstore.ForeColor = System.Drawing.Color.Green;
+            this.btnMstore.Location = new System.Drawing.Point(164, 96);
+            this.btnMstore.Name = "btnMstore";
+            this.btnMstore.Size = new System.Drawing.Size(69, 43);
+            this.btnMstore.TabIndex = 26;
+            this.btnMstore.Text = "MS";
+            this.btnMstore.UseVisualStyleBackColor = false;
+            this.btnMstore.Click += new System.EventHandler(this.btnMstore_Click);
             // 
             // DisplayBox
             // 
@@ -488,7 +488,7 @@ namespace Project_Calculator
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(321, 434);
             this.Controls.Add(this.DisplayBox);
-            this.Controls.Add(this.btnMsave);
+            this.Controls.Add(this.btnMstore);
             this.Controls.Add(this.btnMminus);
             this.Controls.Add(this.btnMplus);
             this.Controls.Add(this.btnDecimal);
@@ -553,7 +553,7 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnMplus;
         private System.Windows.Forms.Button btnMminus;
-        private System.Windows.Forms.Button btnMsave;
+        private System.Windows.Forms.Button btnMstore;
         private System.Windows.Forms.TextBox DisplayBox;
     }
 }

@@ -214,11 +214,9 @@ namespace Project_Calculator
 
         private void btnDecimal_Click(object sender, EventArgs e)
         {
-            if (!DisplayBox.Text.Contains("."))
-            {
-                DisplayBox.Text += "."; 
-                // to avoid using the decimal point once it is clicked.
-            }
+            calcu.NumA = DisplayBox.Text;
+            calcu.Decimal();
+            DisplayBox.Text = calcu.NumA;         
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -251,9 +249,9 @@ namespace Project_Calculator
             //Memory Remove
         }
 
-        private void btnMsave_Click(object sender, EventArgs e)
+        private void btnMstore_Click(object sender, EventArgs e)
         {
-           
+            //Memory Save
         }
     }
 }
