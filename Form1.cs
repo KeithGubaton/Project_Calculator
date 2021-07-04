@@ -229,7 +229,7 @@ namespace Project_Calculator
             }
         }
 
-        private void btnCE_Click(object sender, EventArgs e)//
+        private void btnCE_Click(object sender, EventArgs e)
         {
             DisplayBox.Text = String.Empty;
             DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
@@ -238,7 +238,7 @@ namespace Project_Calculator
         private void btnClr_Click(object sender, EventArgs e)
         {
             DisplayBox.Clear();
-            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);//
+            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
@@ -253,7 +253,7 @@ namespace Project_Calculator
 
         private void btnMsave_Click(object sender, EventArgs e)
         {
-            //Memory Save
+           
         }
     }
 }
