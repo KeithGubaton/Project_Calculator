@@ -139,6 +139,8 @@ namespace Project_Calculator
             {
                 DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
             }
+
+            label.Text = System.Convert.ToString(calcu.Num) + "     " + calcu.Operation;
         }
 
         //method for buttons
@@ -231,12 +233,14 @@ namespace Project_Calculator
         private void btnCE_Click(object sender, EventArgs e)///
         {
             DisplayBox.Text = String.Empty;
+            label.Text = String.Empty;
             DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
         private void btnClr_Click(object sender, EventArgs e)///
         {
             DisplayBox.Clear();
+            label.Text = String.Empty;
             DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 

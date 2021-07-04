@@ -61,6 +61,7 @@ namespace Project_Calculator
             this.btnMminus = new System.Windows.Forms.Button();
             this.btnMstore = new System.Windows.Forms.Button();
             this.DisplayBox = new System.Windows.Forms.TextBox();
+            this.label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnFrac
@@ -482,12 +483,23 @@ namespace Project_Calculator
             this.DisplayBox.Size = new System.Drawing.Size(294, 32);
             this.DisplayBox.TabIndex = 27;
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label.ForeColor = System.Drawing.Color.Green;
+            this.label.Location = new System.Drawing.Point(270, 24);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(0, 13);
+            this.label.TabIndex = 28;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(321, 434);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.DisplayBox);
             this.Controls.Add(this.btnMstore);
             this.Controls.Add(this.btnMminus);
@@ -557,6 +569,7 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnMminus;
         private System.Windows.Forms.Button btnMstore;
         private System.Windows.Forms.TextBox DisplayBox;
+        private System.Windows.Forms.Label label;
     }
 }
 
