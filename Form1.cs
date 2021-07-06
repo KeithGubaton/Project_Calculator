@@ -210,7 +210,7 @@ namespace Project_Calculator
             DisplayBox.Text = calcu.NumA;         
         }
 
-        //Miscellaneous
+        //Other Buttons
         private void btnDel_Click(object sender, EventArgs e)
         {
             calcu.NumA = DisplayBox.Text;
@@ -265,6 +265,7 @@ namespace Project_Calculator
             return;
         }
 
+        //Miscellaneous
         private void DisplayBox_TextChanged(object sender, EventArgs e)
         {
             if (DisplayBox.Text.Length > 15)
