@@ -239,7 +239,7 @@ namespace Project_Calculator
 
         private void btnMminus_Click(object sender, EventArgs e)
         {
-            //Memory Remove
+            //Memory minus
             calcu.Mstore1 -= calcu.Result;
             DisplayBox.Text = calcu.Mstore1.ToString();
         }
