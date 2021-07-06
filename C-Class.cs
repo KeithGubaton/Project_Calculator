@@ -99,6 +99,12 @@ namespace Project_Calculator
 
         }
 
+        public void hatdog()
+        {
+            NumA = "0";
+            float pls = float.Parse(NumA);
+        }
+
         //method for operations
         public void swtch()
         {

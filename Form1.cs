@@ -101,6 +101,13 @@ namespace Project_Calculator
                 calcu.Operation = "+";
                 calcu.IsOperationPressed = true;
             }
+            else
+            {
+                calcu.Operation = "+";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
+            }
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
@@ -110,6 +117,13 @@ namespace Project_Calculator
                 btnEquals.PerformClick();
                 calcu.Operation = "-";
                 calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "-";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
             }
         }
 
@@ -121,6 +135,13 @@ namespace Project_Calculator
                 calcu.Operation = "*";
                 calcu.IsOperationPressed = true;
             }
+            else
+            {
+                calcu.Operation = "*";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
+            }
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
@@ -130,6 +151,13 @@ namespace Project_Calculator
                 btnEquals.PerformClick();
                 calcu.Operation = "/";
                 calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "/";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
             }
         }
 
@@ -141,6 +169,13 @@ namespace Project_Calculator
                 calcu.Operation = "1/x";
                 calcu.IsOperationPressed = true;
             }
+            else
+            {
+                calcu.Operation = "1/x";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
+            }
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
@@ -150,6 +185,13 @@ namespace Project_Calculator
                 btnEquals.PerformClick();
                 calcu.Operation = "x^2";
                 calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "x^2";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
             }
         }
 
@@ -161,6 +203,13 @@ namespace Project_Calculator
                 calcu.Operation = "sqrt";
                 calcu.IsOperationPressed = true;
             }
+            else
+            {
+                calcu.Operation = "sqrt";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
+            }
         }
 
         private void btnPercent_Click(object sender, EventArgs e)
@@ -170,6 +219,13 @@ namespace Project_Calculator
                 btnEquals.PerformClick();
                 calcu.Operation = "%";
                 calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "%";
+                calcu.NumA = DisplayBox.Text;
+                float value = float.Parse(DisplayBox.Text);
+                DisplayBox.Text = value + " " + calcu.Operation;
             }
         }
 
@@ -207,8 +263,7 @@ namespace Project_Calculator
             DisplayBox.Clear();
             label.Text = String.Empty;
             //DisplayBox.Text = "0";
-            float kyut = float.Parse(calcu.NumA);
-            kyut = 0;
+            calcu.hatdog();
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
