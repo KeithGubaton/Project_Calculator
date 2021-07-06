@@ -436,7 +436,7 @@ namespace Project_Calculator
             this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMplus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMplus.ForeColor = System.Drawing.Color.Green;
-            this.btnMplus.Location = new System.Drawing.Point(134, 107);
+            this.btnMplus.Location = new System.Drawing.Point(74, 107);
             this.btnMplus.Name = "btnMplus";
             this.btnMplus.Size = new System.Drawing.Size(54, 33);
             this.btnMplus.TabIndex = 24;
@@ -450,7 +450,7 @@ namespace Project_Calculator
             this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMminus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMminus.ForeColor = System.Drawing.Color.Green;
-            this.btnMminus.Location = new System.Drawing.Point(194, 107);
+            this.btnMminus.Location = new System.Drawing.Point(134, 107);
             this.btnMminus.Name = "btnMminus";
             this.btnMminus.Size = new System.Drawing.Size(54, 33);
             this.btnMminus.TabIndex = 25;
@@ -502,7 +502,7 @@ namespace Project_Calculator
             this.btnMRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMRecall.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMRecall.ForeColor = System.Drawing.Color.Green;
-            this.btnMRecall.Location = new System.Drawing.Point(74, 107);
+            this.btnMRecall.Location = new System.Drawing.Point(194, 107);
             this.btnMRecall.Name = "btnMRecall";
             this.btnMRecall.Size = new System.Drawing.Size(54, 33);
             this.btnMRecall.TabIndex = 29;

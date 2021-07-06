@@ -147,52 +147,82 @@ namespace Project_Calculator
         //operations
         private void btnPlus_Click(object sender, EventArgs e)
         {
-
-
-            calcu.Operation = "+";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "+";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "-";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "-";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "*";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "*";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "/";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "/";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnFrac_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "1/x";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "1/x";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "x^2";
-            calcu.IsOperationPressed = true; 
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "x^2";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnSqrt_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "sqrt";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "sqrt";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "%";
-            calcu.IsOperationPressed = true;
+            if (DisplayBox.Text != "0")
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "%";
+                calcu.IsOperationPressed = true;
+            }
         }
 
         //(Add-ons?)

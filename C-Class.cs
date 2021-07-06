@@ -120,5 +120,25 @@ namespace Project_Calculator
                 NumA = NumA.Remove(NumA.Length - 1, 1);
             }
         }
+
+        public void MC()//
+        {
+            NumA = (0).ToString();
+        }
+
+        public void MS()//
+        {
+            NumA = Double.Parse(NumA).ToString();
+        }
+
+        public void MR()//
+        {
+            NumA = NumA.ToString();
+        }
+
+        public void MPlus()
+        {
+
+        }
     }
 }
