@@ -484,6 +484,7 @@ namespace Project_Calculator
             this.DisplayBox.Size = new System.Drawing.Size(294, 32);
             this.DisplayBox.TabIndex = 27;
             this.DisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.DisplayBox.TextChanged += new System.EventHandler(this.DisplayBox_TextChanged);
             // 
             // label
             // 

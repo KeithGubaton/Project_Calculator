@@ -69,7 +69,6 @@ namespace Project_Calculator
             AppendButtons("9");
         }
 
-
         private void btnEquals_Click(object sender, EventArgs e)
         {
             label.Text = System.Convert.ToString(calcu.Num) + " " + calcu.Operation;
@@ -128,11 +127,6 @@ namespace Project_Calculator
                 calcu.NumA = DisplayBox.Text;
                 calcu.Sqrt();
                 DisplayBox.Text = calcu.NumA;
-            }
-
-            if (DisplayBox.Text.Length > 15)
-            {
-                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
             }
         }
 
@@ -228,14 +222,12 @@ namespace Project_Calculator
         {
             DisplayBox.Text = String.Empty;
             label.Text = String.Empty;
-            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
         private void btnClr_Click(object sender, EventArgs e)///
         {
             DisplayBox.Clear();
             label.Text = String.Empty;
-            DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
@@ -271,6 +263,18 @@ namespace Project_Calculator
             //Memory Recall
             DisplayBox.Text = calcu.Mstore1.ToString();
             return;
+        }
+
+        private void DisplayBox_TextChanged(object sender, EventArgs e)
+        {
+            if (DisplayBox.Text.Length > 15)
+            {
+                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
+            }
+            else
+            {
+                DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
+            }
         }
     }
 }
