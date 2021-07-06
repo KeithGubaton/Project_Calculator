@@ -263,17 +263,18 @@ namespace Project_Calculator
             DisplayBox.Clear();
             label.Text = String.Empty;
             //DisplayBox.Text = "0";
-            calcu.hatdog();
+            float kyut = float.Parse(calcu.NumA);
+            kyut = 0;
         }
 
-        private void btnMplus_Click(object sender, EventArgs e)
+        private void btnMplus_Click(object sender, EventArgs e)///
         {
             //Memory Add
             calcu.Mstore1 += calcu.Result;
             DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
-        private void btnMminus_Click(object sender, EventArgs e)
+        private void btnMminus_Click(object sender, EventArgs e)///
         {
             //Memory minus
             calcu.Mstore1 -= calcu.Result;

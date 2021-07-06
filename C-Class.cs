@@ -94,15 +94,9 @@ namespace Project_Calculator
             NumA = NumA.ToString();
         }
 
-        public void MPlus()
+        public void MPlus()//
         {
 
-        }
-
-        public void hatdog()
-        {
-            NumA = "0";
-            float pls = float.Parse(NumA);
         }
 
         //method for operations
