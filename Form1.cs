@@ -247,16 +247,22 @@ namespace Project_Calculator
         private void btnMplus_Click(object sender, EventArgs e)
         {
             //Memory Add
+            calcu.Mstore1 += calcu.Result;
+            DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         private void btnMminus_Click(object sender, EventArgs e)
         {
             //Memory Remove
+            calcu.Mstore1 -= calcu.Result;
+            DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         private void btnMstore_Click(object sender, EventArgs e)
         {
-            //Memory Save
+            //Memory Store
+            calcu.Mstore1 = Decimal.Parse(DisplayBox.Text);
+            return;
         }
     }
 }

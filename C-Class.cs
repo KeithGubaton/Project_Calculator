@@ -16,8 +16,8 @@ namespace Project_Calculator
         private Boolean isOperationPressed = false;
         private String num = "";
         private String numA = "";
-        private string result = "";
-        
+        private decimal Mstore = 0;
+        private decimal result = 0;
         public string Num 
         { 
             get => num; 
@@ -38,7 +38,12 @@ namespace Project_Calculator
             get => numA; 
             set => numA = value; 
         }
-        public string Result 
+        public decimal Mstore1 
+        { 
+            get => Mstore; 
+            set => Mstore = value; 
+        }
+        public decimal Result 
         { 
             get => result; 
             set => result = value; 
