@@ -49,48 +49,6 @@ namespace Project_Calculator
             set => result = value; 
         }
 
-        //methods for operations
-        public void Add()
-        {
-            NumA = (float.Parse(Num) + float.Parse(NumA)).ToString();
-        }
-
-        public void Subtract()
-        {
-            NumA = (float.Parse(Num) - float.Parse(NumA)).ToString();
-        }
-
-        public void Multiply()
-        {
-            NumA = (float.Parse(Num) * float.Parse(NumA)).ToString();
-        }
-
-        public void Divide()
-        {
-            NumA = (float.Parse(Num) / float.Parse(NumA)).ToString();
-        }
-
-        public void Frac()
-        {
-            NumA = (1 / float.Parse(NumA)).ToString();
-        }
-
-        public void Sqrd()
-        {
-            NumA = (float.Parse(NumA) * float.Parse(NumA)).ToString();
-        }
-
-        public void Sqrt()
-        {
-            double numero = float.Parse(NumA);
-            NumA = Math.Sqrt(numero).ToString();
-        }
-
-        public void Percent()
-        {
-            NumA = (float.Parse(NumA) / 100).ToString();
-        }
-
         //Sign & Decimal (Add-ons?)
         public void Sign()
         {
@@ -139,6 +97,38 @@ namespace Project_Calculator
         public void MPlus()
         {
 
+        }
+
+        //method for operations
+        public void swtch()
+        {
+            switch (Operation)
+            {
+                case "+":
+                    NumA = (float.Parse(Num) + float.Parse(NumA)).ToString();
+                    break;
+                case "-":
+                    NumA = (float.Parse(Num) - float.Parse(NumA)).ToString();
+                    break;
+                case "*":
+                    NumA = (float.Parse(Num) * float.Parse(NumA)).ToString();
+                    break;
+                case "/":
+                    NumA = (float.Parse(Num) / float.Parse(NumA)).ToString();
+                    break;
+                case "1/x":
+                    NumA = (1 / float.Parse(NumA)).ToString();
+                    break;
+                case "x^2":
+                    NumA = (float.Parse(NumA) * float.Parse(NumA)).ToString();
+                    break;
+                case "sqrt":
+                    double numero = float.Parse(NumA);
+                    NumA = Math.Sqrt(numero).ToString();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

@@ -71,63 +71,11 @@ namespace Project_Calculator
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            label.Text = System.Convert.ToString(calcu.Num) + " " + calcu.Operation;
-
-            if (calcu.Operation.Equals("+"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Add();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("-"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Subtract();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("*"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Multiply();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("/"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Divide();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("1/x"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Frac();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("x^2"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Sqrd();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("%"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Percent();
-                DisplayBox.Text = calcu.NumA;
-            }
-
-            if (calcu.Operation.Equals("sqrt"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Sqrt();
-                DisplayBox.Text = calcu.NumA;
-            }
+            calcu.NumA = DisplayBox.Text;
+            calcu.swtch();
+            DisplayBox.Text = calcu.NumA;
+            calcu.NumA = DisplayBox.Text;
+            label.Text = System.Convert.ToString(calcu.NumA) + " " + calcu.Operation;
         }
 
         //method for buttons
@@ -147,7 +95,7 @@ namespace Project_Calculator
         //operations
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "+";
@@ -157,7 +105,7 @@ namespace Project_Calculator
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "-";
@@ -167,7 +115,7 @@ namespace Project_Calculator
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "*";
@@ -177,7 +125,7 @@ namespace Project_Calculator
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "/";
@@ -187,7 +135,7 @@ namespace Project_Calculator
 
         private void btnFrac_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "1/x";
@@ -197,7 +145,7 @@ namespace Project_Calculator
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "x^2";
@@ -207,7 +155,7 @@ namespace Project_Calculator
 
         private void btnSqrt_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "sqrt";
@@ -217,7 +165,7 @@ namespace Project_Calculator
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
-            if (DisplayBox.Text != "0")
+            if (calcu.NumA != "0")
             {
                 btnEquals.PerformClick();
                 calcu.Operation = "%";
@@ -258,6 +206,9 @@ namespace Project_Calculator
         {
             DisplayBox.Clear();
             label.Text = String.Empty;
+            //DisplayBox.Text = "0";
+            float kyut = float.Parse(calcu.NumA);
+            kyut = 0;
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
