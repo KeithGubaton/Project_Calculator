@@ -130,13 +130,6 @@ namespace Project_Calculator
                 DisplayBox.Text = calcu.NumA;
             }
 
-            if (calcu.Operation.Equals("+/-"))
-            {
-                calcu.NumA = DisplayBox.Text;
-                calcu.Sign();
-                DisplayBox.Text = calcu.NumA;
-            }
-
             if (DisplayBox.Text.Length > 15)
             {
                 DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
@@ -211,8 +204,9 @@ namespace Project_Calculator
         //(Add-ons?)
         private void btnSign_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "+/-";
-            calcu.IsOperationPressed = true;
+            calcu.NumA = DisplayBox.Text;
+            calcu.Sign();
+            DisplayBox.Text = calcu.NumA;
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
@@ -262,6 +256,20 @@ namespace Project_Calculator
         {
             //Memory Store
             calcu.Mstore1 = Decimal.Parse(DisplayBox.Text);
+            return;
+        }
+
+        private void btnMClear_Click(object sender, EventArgs e)
+        {
+            //Memory Clear
+            calcu.Mstore1 = 0;
+            return;
+        }
+
+        private void btnMRecall_Click(object sender, EventArgs e)
+        {
+            //Memory Recall
+            DisplayBox.Text = calcu.Mstore1.ToString();
             return;
         }
     }

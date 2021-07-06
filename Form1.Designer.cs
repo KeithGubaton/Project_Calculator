@@ -62,6 +62,8 @@ namespace Project_Calculator
             this.btnMstore = new System.Windows.Forms.Button();
             this.DisplayBox = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
+            this.btnMRecall = new System.Windows.Forms.Button();
+            this.btnMClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFrac
@@ -112,7 +114,7 @@ namespace Project_Calculator
             this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivide.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDivide.ForeColor = System.Drawing.Color.Green;
-            this.btnDivide.Location = new System.Drawing.Point(239, 146);
+            this.btnDivide.Location = new System.Drawing.Point(239, 192);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(69, 43);
             this.btnDivide.TabIndex = 3;
@@ -224,7 +226,7 @@ namespace Project_Calculator
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiply.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMultiply.ForeColor = System.Drawing.Color.Green;
-            this.btnMultiply.Location = new System.Drawing.Point(239, 192);
+            this.btnMultiply.Location = new System.Drawing.Point(239, 238);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(69, 43);
             this.btnMultiply.TabIndex = 11;
@@ -238,7 +240,7 @@ namespace Project_Calculator
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDel.ForeColor = System.Drawing.Color.Green;
-            this.btnDel.Location = new System.Drawing.Point(239, 97);
+            this.btnDel.Location = new System.Drawing.Point(239, 146);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(69, 43);
             this.btnDel.TabIndex = 12;
@@ -252,7 +254,7 @@ namespace Project_Calculator
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMinus.ForeColor = System.Drawing.Color.Green;
-            this.btnMinus.Location = new System.Drawing.Point(239, 238);
+            this.btnMinus.Location = new System.Drawing.Point(239, 284);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(69, 43);
             this.btnMinus.TabIndex = 13;
@@ -337,7 +339,7 @@ namespace Project_Calculator
             this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlus.ForeColor = System.Drawing.Color.Green;
-            this.btnPlus.Location = new System.Drawing.Point(239, 284);
+            this.btnPlus.Location = new System.Drawing.Point(239, 330);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(69, 43);
             this.btnPlus.TabIndex = 20;
@@ -351,9 +353,9 @@ namespace Project_Calculator
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEquals.ForeColor = System.Drawing.Color.Green;
-            this.btnEquals.Location = new System.Drawing.Point(239, 330);
+            this.btnEquals.Location = new System.Drawing.Point(239, 376);
             this.btnEquals.Name = "btnEquals";
-            this.btnEquals.Size = new System.Drawing.Size(69, 89);
+            this.btnEquals.Size = new System.Drawing.Size(69, 43);
             this.btnEquals.TabIndex = 19;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = true;
@@ -434,9 +436,9 @@ namespace Project_Calculator
             this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMplus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMplus.ForeColor = System.Drawing.Color.Green;
-            this.btnMplus.Location = new System.Drawing.Point(14, 96);
+            this.btnMplus.Location = new System.Drawing.Point(134, 107);
             this.btnMplus.Name = "btnMplus";
-            this.btnMplus.Size = new System.Drawing.Size(69, 43);
+            this.btnMplus.Size = new System.Drawing.Size(54, 33);
             this.btnMplus.TabIndex = 24;
             this.btnMplus.Text = "M+";
             this.btnMplus.UseVisualStyleBackColor = true;
@@ -448,9 +450,9 @@ namespace Project_Calculator
             this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMminus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMminus.ForeColor = System.Drawing.Color.Green;
-            this.btnMminus.Location = new System.Drawing.Point(89, 96);
+            this.btnMminus.Location = new System.Drawing.Point(194, 107);
             this.btnMminus.Name = "btnMminus";
-            this.btnMminus.Size = new System.Drawing.Size(69, 43);
+            this.btnMminus.Size = new System.Drawing.Size(54, 33);
             this.btnMminus.TabIndex = 25;
             this.btnMminus.Text = "M-";
             this.btnMminus.UseVisualStyleBackColor = true;
@@ -463,9 +465,9 @@ namespace Project_Calculator
             this.btnMstore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMstore.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMstore.ForeColor = System.Drawing.Color.Green;
-            this.btnMstore.Location = new System.Drawing.Point(164, 96);
+            this.btnMstore.Location = new System.Drawing.Point(254, 107);
             this.btnMstore.Name = "btnMstore";
-            this.btnMstore.Size = new System.Drawing.Size(69, 43);
+            this.btnMstore.Size = new System.Drawing.Size(54, 33);
             this.btnMstore.TabIndex = 26;
             this.btnMstore.Text = "MS";
             this.btnMstore.UseVisualStyleBackColor = false;
@@ -479,9 +481,9 @@ namespace Project_Calculator
             this.DisplayBox.ForeColor = System.Drawing.Color.Green;
             this.DisplayBox.Location = new System.Drawing.Point(14, 42);
             this.DisplayBox.Name = "DisplayBox";
-            this.DisplayBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DisplayBox.Size = new System.Drawing.Size(294, 32);
             this.DisplayBox.TabIndex = 27;
+            this.DisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label
             // 
@@ -493,12 +495,42 @@ namespace Project_Calculator
             this.label.Size = new System.Drawing.Size(0, 13);
             this.label.TabIndex = 28;
             // 
+            // btnMRecall
+            // 
+            this.btnMRecall.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMRecall.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMRecall.ForeColor = System.Drawing.Color.Green;
+            this.btnMRecall.Location = new System.Drawing.Point(74, 107);
+            this.btnMRecall.Name = "btnMRecall";
+            this.btnMRecall.Size = new System.Drawing.Size(54, 33);
+            this.btnMRecall.TabIndex = 29;
+            this.btnMRecall.Text = "MR";
+            this.btnMRecall.UseVisualStyleBackColor = true;
+            this.btnMRecall.Click += new System.EventHandler(this.btnMRecall_Click);
+            // 
+            // btnMClear
+            // 
+            this.btnMClear.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMClear.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMClear.ForeColor = System.Drawing.Color.Green;
+            this.btnMClear.Location = new System.Drawing.Point(14, 107);
+            this.btnMClear.Name = "btnMClear";
+            this.btnMClear.Size = new System.Drawing.Size(54, 33);
+            this.btnMClear.TabIndex = 30;
+            this.btnMClear.Text = "MC";
+            this.btnMClear.UseVisualStyleBackColor = true;
+            this.btnMClear.Click += new System.EventHandler(this.btnMClear_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(321, 434);
+            this.Controls.Add(this.btnMClear);
+            this.Controls.Add(this.btnMRecall);
             this.Controls.Add(this.label);
             this.Controls.Add(this.DisplayBox);
             this.Controls.Add(this.btnMstore);
@@ -570,6 +602,8 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnMstore;
         private System.Windows.Forms.TextBox DisplayBox;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Button btnMRecall;
+        private System.Windows.Forms.Button btnMClear;
     }
 }
 
