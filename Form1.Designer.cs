@@ -59,7 +59,7 @@ namespace Project_Calculator
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnMplus = new System.Windows.Forms.Button();
             this.btnMminus = new System.Windows.Forms.Button();
-            this.btnMstore = new System.Windows.Forms.Button();
+            this.Memory = new System.Windows.Forms.Button();
             this.DisplayBox = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.btnMRecall = new System.Windows.Forms.Button();
@@ -442,7 +442,6 @@ namespace Project_Calculator
             this.btnMplus.TabIndex = 24;
             this.btnMplus.Text = "M+";
             this.btnMplus.UseVisualStyleBackColor = true;
-            this.btnMplus.Click += new System.EventHandler(this.btnMplus_Click);
             // 
             // btnMminus
             // 
@@ -456,22 +455,21 @@ namespace Project_Calculator
             this.btnMminus.TabIndex = 25;
             this.btnMminus.Text = "M-";
             this.btnMminus.UseVisualStyleBackColor = true;
-            this.btnMminus.Click += new System.EventHandler(this.btnMminus_Click);
             // 
-            // btnMstore
+            // Memory
             // 
-            this.btnMstore.BackColor = System.Drawing.Color.Black;
-            this.btnMstore.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnMstore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMstore.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMstore.ForeColor = System.Drawing.Color.Green;
-            this.btnMstore.Location = new System.Drawing.Point(254, 107);
-            this.btnMstore.Name = "btnMstore";
-            this.btnMstore.Size = new System.Drawing.Size(54, 33);
-            this.btnMstore.TabIndex = 26;
-            this.btnMstore.Text = "MS";
-            this.btnMstore.UseVisualStyleBackColor = false;
-            this.btnMstore.Click += new System.EventHandler(this.btnMstore_Click);
+            this.Memory.BackColor = System.Drawing.Color.Black;
+            this.Memory.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.Memory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Memory.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Memory.ForeColor = System.Drawing.Color.Green;
+            this.Memory.Location = new System.Drawing.Point(254, 107);
+            this.Memory.Name = "Memory";
+            this.Memory.Size = new System.Drawing.Size(54, 33);
+            this.Memory.TabIndex = 26;
+            this.Memory.Text = "MS";
+            this.Memory.UseVisualStyleBackColor = false;
+            this.Memory.Click += new System.EventHandler(this.Memory_Click);
             // 
             // DisplayBox
             // 
@@ -508,7 +506,6 @@ namespace Project_Calculator
             this.btnMRecall.TabIndex = 29;
             this.btnMRecall.Text = "MR";
             this.btnMRecall.UseVisualStyleBackColor = true;
-            this.btnMRecall.Click += new System.EventHandler(this.btnMRecall_Click);
             // 
             // btnMClear
             // 
@@ -522,7 +519,6 @@ namespace Project_Calculator
             this.btnMClear.TabIndex = 30;
             this.btnMClear.Text = "MC";
             this.btnMClear.UseVisualStyleBackColor = true;
-            this.btnMClear.Click += new System.EventHandler(this.btnMClear_Click);
             // 
             // Calculator
             // 
@@ -534,7 +530,7 @@ namespace Project_Calculator
             this.Controls.Add(this.btnMRecall);
             this.Controls.Add(this.label);
             this.Controls.Add(this.DisplayBox);
-            this.Controls.Add(this.btnMstore);
+            this.Controls.Add(this.Memory);
             this.Controls.Add(this.btnMminus);
             this.Controls.Add(this.btnMplus);
             this.Controls.Add(this.btnDecimal);
@@ -600,7 +596,7 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnMplus;
         private System.Windows.Forms.Button btnMminus;
-        private System.Windows.Forms.Button btnMstore;
+        private System.Windows.Forms.Button Memory;
         private System.Windows.Forms.TextBox DisplayBox;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button btnMRecall;

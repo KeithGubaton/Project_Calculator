@@ -99,7 +99,8 @@ namespace Project_Calculator
 
         public void MPlus()//
         {
-            
+            Mstore1 += decimal.Parse(NumA);
+            NumA = Mstore1.ToString();
         }
 
         public void Clr()

@@ -13,7 +13,7 @@ namespace Project_Calculator
     public partial class Calculator : Form
     {
         C_Class calcu = new C_Class();
-        
+        private string memory = "";
         public Calculator()
         {
             InitializeComponent();
@@ -182,48 +182,6 @@ namespace Project_Calculator
         {
             DisplayBox.Clear();  
             label.Text = String.Empty;
-            //calcu.Clr();
-        }
-
-        private void btnMplus_Click(object sender, EventArgs e)///
-        {
-            //Memory Add
-            calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
-            DisplayBox.Text = calcu.Mstore1.ToString();
-        }
-
-        private void btnMminus_Click(object sender, EventArgs e)///
-        {
-            //Memory minus
-            calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
-            DisplayBox.Text = calcu.Mstore1.ToString();
-        }
-
-        private void btnMstore_Click(object sender, EventArgs e)
-        {
-            //Memory Store
-            calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
-            //return;
-
-            btnMClear.Enabled = true;
-            btnMRecall.Enabled = true;
-        }
-
-        private void btnMClear_Click(object sender, EventArgs e)
-        {
-            //Memory Clear
-            calcu.Mstore1 = 0;
-            //return;
-
-            btnMClear.Enabled = false;
-            btnMRecall.Enabled = false;
-        }
-
-        private void btnMRecall_Click(object sender, EventArgs e)
-        {
-            //Memory Recall
-            DisplayBox.Text = calcu.Mstore1.ToString();
-            //return;
         }
 
         //Miscellaneous
@@ -236,6 +194,38 @@ namespace Project_Calculator
             else
             {
                 DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
+            }
+        }
+
+        private void Memory_Click(object sender, EventArgs e)
+        {
+            switch (memory)
+            {
+                case "MS":
+                    calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
+
+                    btnMClear.Enabled = true;
+                    btnMRecall.Enabled = true;
+                    break;
+                case "MC":
+                    calcu.Mstore1 = 0;
+
+                    btnMClear.Enabled = false;
+                    btnMRecall.Enabled = false;
+                    break;
+                case "MR":
+                    DisplayBox.Text = calcu.Mstore1.ToString();
+                    break;
+                case "M+":
+                    calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
+                    DisplayBox.Text = calcu.Mstore1.ToString();
+                    break;
+                case "M-":
+                    calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
+                    DisplayBox.Text = calcu.Mstore1.ToString();
+                    break;
+                default:
+                    break;
             }
         }
     }
