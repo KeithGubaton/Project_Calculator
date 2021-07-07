@@ -16,6 +16,8 @@ namespace Project_Calculator
         public Calculator()
         {
             InitializeComponent();
+            btnMClear.Enabled = false;
+            btnMRecall.Enabled = false;
         }
 
         private void btnZero_Click(object sender, EventArgs e)
@@ -176,6 +178,7 @@ namespace Project_Calculator
         }
 
         // MEMORY BUTTONS
+
         private void btnMStore_Click(object sender, EventArgs e)
         {
             calcu.Mstore1 = decimal.Parse(DisplayBox.Text);

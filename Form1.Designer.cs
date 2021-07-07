@@ -489,12 +489,15 @@ namespace Project_Calculator
             // label
             // 
             this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Black;
             this.label.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label.ForeColor = System.Drawing.Color.Green;
-            this.label.Location = new System.Drawing.Point(270, 24);
+            this.label.Location = new System.Drawing.Point(272, 26);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(0, 13);
+            this.label.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label.Size = new System.Drawing.Size(15, 13);
             this.label.TabIndex = 28;
+            this.label.Text = " ";
             // 
             // btnMRecall
             // 
