@@ -69,6 +69,8 @@ namespace Project_Calculator
             // btnFrac
             // 
             this.btnFrac.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFrac.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnFrac.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnFrac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrac.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnFrac.ForeColor = System.Drawing.Color.Green;
@@ -83,6 +85,8 @@ namespace Project_Calculator
             // btnSqrd
             // 
             this.btnSqrd.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSqrd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnSqrd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSqrd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSqrd.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSqrd.ForeColor = System.Drawing.Color.Green;
@@ -97,6 +101,8 @@ namespace Project_Calculator
             // btnSqrt
             // 
             this.btnSqrt.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSqrt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnSqrt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSqrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSqrt.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSqrt.ForeColor = System.Drawing.Color.Green;
@@ -111,6 +117,8 @@ namespace Project_Calculator
             // btnDivide
             // 
             this.btnDivide.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDivide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnDivide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivide.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDivide.ForeColor = System.Drawing.Color.Green;
@@ -125,6 +133,8 @@ namespace Project_Calculator
             // btnSeven
             // 
             this.btnSeven.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSeven.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnSeven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeven.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSeven.ForeColor = System.Drawing.Color.Green;
@@ -139,6 +149,8 @@ namespace Project_Calculator
             // btnEight
             // 
             this.btnEight.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnEight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnEight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEight.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEight.ForeColor = System.Drawing.Color.Green;
@@ -153,6 +165,8 @@ namespace Project_Calculator
             // btnNine
             // 
             this.btnNine.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnNine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnNine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNine.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNine.ForeColor = System.Drawing.Color.Green;
@@ -167,6 +181,8 @@ namespace Project_Calculator
             // btnPercent
             // 
             this.btnPercent.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnPercent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnPercent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPercent.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPercent.ForeColor = System.Drawing.Color.Green;
@@ -181,6 +197,8 @@ namespace Project_Calculator
             // btnCE
             // 
             this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnCE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCE.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCE.ForeColor = System.Drawing.Color.Green;
@@ -195,6 +213,8 @@ namespace Project_Calculator
             // btnClr
             // 
             this.btnClr.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnClr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnClr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClr.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClr.ForeColor = System.Drawing.Color.Green;
@@ -209,6 +229,8 @@ namespace Project_Calculator
             // btnSix
             // 
             this.btnSix.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSix.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnSix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSix.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSix.ForeColor = System.Drawing.Color.Green;
@@ -223,6 +245,8 @@ namespace Project_Calculator
             // btnMultiply
             // 
             this.btnMultiply.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMultiply.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMultiply.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiply.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMultiply.ForeColor = System.Drawing.Color.Green;
@@ -237,6 +261,8 @@ namespace Project_Calculator
             // btnDel
             // 
             this.btnDel.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnDel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDel.ForeColor = System.Drawing.Color.Green;
@@ -251,6 +277,8 @@ namespace Project_Calculator
             // btnMinus
             // 
             this.btnMinus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMinus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMinus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMinus.ForeColor = System.Drawing.Color.Green;
@@ -265,6 +293,8 @@ namespace Project_Calculator
             // btnFour
             // 
             this.btnFour.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFour.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnFour.ForeColor = System.Drawing.Color.Green;
@@ -279,6 +309,8 @@ namespace Project_Calculator
             // btnFive
             // 
             this.btnFive.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFive.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnFive.ForeColor = System.Drawing.Color.Green;
@@ -293,6 +325,8 @@ namespace Project_Calculator
             // btnOne
             // 
             this.btnOne.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnOne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOne.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnOne.ForeColor = System.Drawing.Color.Green;
@@ -307,7 +341,8 @@ namespace Project_Calculator
             // btnTwo
             // 
             this.btnTwo.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTwo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTwo.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTwo.ForeColor = System.Drawing.Color.Green;
@@ -322,6 +357,8 @@ namespace Project_Calculator
             // btnThree
             // 
             this.btnThree.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnThree.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThree.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnThree.ForeColor = System.Drawing.Color.Green;
@@ -336,6 +373,8 @@ namespace Project_Calculator
             // btnPlus
             // 
             this.btnPlus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnPlus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnPlus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlus.ForeColor = System.Drawing.Color.Green;
@@ -350,6 +389,8 @@ namespace Project_Calculator
             // btnEquals
             // 
             this.btnEquals.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnEquals.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnEquals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEquals.ForeColor = System.Drawing.Color.Green;
@@ -364,6 +405,8 @@ namespace Project_Calculator
             // btnSign
             // 
             this.btnSign.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSign.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnSign.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSign.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSign.ForeColor = System.Drawing.Color.Green;
@@ -405,6 +448,8 @@ namespace Project_Calculator
             // btnZero
             // 
             this.btnZero.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnZero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnZero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnZero.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnZero.ForeColor = System.Drawing.Color.Green;
@@ -419,6 +464,8 @@ namespace Project_Calculator
             // btnDecimal
             // 
             this.btnDecimal.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDecimal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnDecimal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDecimal.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDecimal.ForeColor = System.Drawing.Color.Green;
@@ -433,6 +480,8 @@ namespace Project_Calculator
             // btnMplus
             // 
             this.btnMplus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMplus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMplus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMplus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMplus.ForeColor = System.Drawing.Color.Green;
@@ -447,6 +496,8 @@ namespace Project_Calculator
             // btnMminus
             // 
             this.btnMminus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMminus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMminus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMminus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMminus.ForeColor = System.Drawing.Color.Green;
@@ -462,6 +513,8 @@ namespace Project_Calculator
             // 
             this.btnMStore.BackColor = System.Drawing.Color.Black;
             this.btnMStore.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMStore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMStore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMStore.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMStore.ForeColor = System.Drawing.Color.Green;
@@ -479,7 +532,7 @@ namespace Project_Calculator
             this.DisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DisplayBox.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DisplayBox.ForeColor = System.Drawing.Color.Green;
-            this.DisplayBox.Location = new System.Drawing.Point(14, 42);
+            this.DisplayBox.Location = new System.Drawing.Point(14, 54);
             this.DisplayBox.Name = "DisplayBox";
             this.DisplayBox.Size = new System.Drawing.Size(294, 32);
             this.DisplayBox.TabIndex = 27;
@@ -492,16 +545,19 @@ namespace Project_Calculator
             this.label.BackColor = System.Drawing.Color.Black;
             this.label.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label.ForeColor = System.Drawing.Color.Green;
-            this.label.Location = new System.Drawing.Point(224, 26);
+            this.label.Location = new System.Drawing.Point(168, 26);
             this.label.Name = "label";
             this.label.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label.Size = new System.Drawing.Size(15, 13);
             this.label.TabIndex = 28;
             this.label.Text = " ";
+            this.label.TextChanged += new System.EventHandler(this.label_TextChanged);
             // 
             // btnMRecall
             // 
             this.btnMRecall.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMRecall.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMRecall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMRecall.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMRecall.ForeColor = System.Drawing.Color.Green;
@@ -516,6 +572,8 @@ namespace Project_Calculator
             // btnMClear
             // 
             this.btnMClear.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMClear.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMClear.ForeColor = System.Drawing.Color.Green;
@@ -565,6 +623,7 @@ namespace Project_Calculator
             this.Controls.Add(this.btnSqrd);
             this.Controls.Add(this.btnFrac);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);

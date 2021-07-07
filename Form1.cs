@@ -252,5 +252,17 @@ namespace Project_Calculator
                 DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
             }
         }
+
+        private void label_TextChanged(object sender, EventArgs e)
+        {
+            if (label.Text.Length > 15)
+            {
+                label.Font = new Font("Lucida Console", 9, FontStyle.Regular);
+            }
+            else
+            {
+                DisplayBox.Font = new Font("Lucida Console", 14, FontStyle.Regular);
+            }
+        }
     }
 }
