@@ -72,9 +72,38 @@ namespace Project_Calculator
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
+            if (calcu.Operation.Equals("1/x"))
+            {
+                calcu.Num = DisplayBox.Text;
+                calcu.operations();
+                label.Text = calcu.Show;
+                DisplayBox.Text = calcu.Num;
+            }
+            else if (calcu.Operation.Equals("x^2"))
+            {
+                calcu.Num = DisplayBox.Text;
+                calcu.operations();
+                label.Text = calcu.Show;
+                DisplayBox.Text = calcu.Num;
+            }
+            else if (calcu.Operation.Equals("sqrt"))
+            {
+                calcu.Num = DisplayBox.Text;
+                calcu.operations();
+                label.Text = calcu.Show;
+                DisplayBox.Text = calcu.Num;
+            }
+            else if (calcu.Operation.Equals("%"))
+            {
+                calcu.Num = DisplayBox.Text;
+                calcu.operations();
+                label.Text = calcu.Show;
+                DisplayBox.Text = calcu.Num;
+            }
+
             calcu.NumA = DisplayBox.Text;
             calcu.operations();
-            label.Text = System.Convert.ToString(calcu.NumA) + " " + calcu.Operation;
+            label.Text = calcu.Show;
             DisplayBox.Text = calcu.NumA;
         }
 
