@@ -197,36 +197,36 @@ namespace Project_Calculator
             }
         }
 
-        private void Memory_Click(object sender, EventArgs e)
+        private void btnMStore_Click(object sender, EventArgs e)
         {
-            switch (memory)
-            {
-                case "MS":
-                    calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
+            calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
 
-                    btnMClear.Enabled = true;
-                    btnMRecall.Enabled = true;
-                    break;
-                case "MC":
-                    calcu.Mstore1 = 0;
+            btnMClear.Enabled = true;
+            btnMRecall.Enabled = true;
+        }
+        
+        private void btnMClear_Click(object sender, EventArgs e)
+        {
+            calcu.Mstore1 = 0;
 
-                    btnMClear.Enabled = false;
-                    btnMRecall.Enabled = false;
-                    break;
-                case "MR":
-                    DisplayBox.Text = calcu.Mstore1.ToString();
-                    break;
-                case "M+":
-                    calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
-                    DisplayBox.Text = calcu.Mstore1.ToString();
-                    break;
-                case "M-":
-                    calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
-                    DisplayBox.Text = calcu.Mstore1.ToString();
-                    break;
-                default:
-                    break;
-            }
+            btnMClear.Enabled = false;
+            btnMRecall.Enabled = false;
+        }
+        private void btnMRecall_Click(object sender, EventArgs e)
+        {
+            DisplayBox.Text = calcu.Mstore1.ToString();
+        }
+
+        private void btnMplus_Click(object sender, EventArgs e)
+        {
+            calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
+            DisplayBox.Text = calcu.Mstore1.ToString();
+        }
+
+        private void btnMminus_Click(object sender, EventArgs e)
+        {
+            calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
+            DisplayBox.Text = calcu.Mstore1.ToString();
         }
     }
 }
