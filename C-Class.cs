@@ -18,6 +18,7 @@ namespace Project_Calculator
         private String numA = "";
         private decimal Mstore = 0;
         private decimal result = 0;
+        private float variable;
         public string Num 
         { 
             get => num; 
@@ -48,6 +49,8 @@ namespace Project_Calculator
             get => result; 
             set => result = value; 
         }
+        public float Variable { get => variable; set => variable = value; }
+
 
         //Sign & Decimal (Add-ons?)
         public void Sign()
@@ -96,8 +99,16 @@ namespace Project_Calculator
 
         public void MPlus()//
         {
-
+            
         }
+
+        public void Clr()
+        {
+            variable = float.Parse(NumA);
+            float sample = 0;
+            variable = sample;
+        }
+
 
         //method for operations
         public void swtch()

@@ -73,9 +73,8 @@ namespace Project_Calculator
         {
             calcu.NumA = DisplayBox.Text;
             calcu.swtch();
-            DisplayBox.Text = calcu.NumA;
-            calcu.NumA = DisplayBox.Text;
             label.Text = System.Convert.ToString(calcu.NumA) + " " + calcu.Operation;
+            DisplayBox.Text = calcu.NumA;
         }
 
         //method for buttons
@@ -95,138 +94,59 @@ namespace Project_Calculator
         //operations
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "+";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "+";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "+";
+            calcu.IsOperationPressed = true;
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "-";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "-";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "-";
+            calcu.IsOperationPressed = true;
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "*";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "*";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "*";
+            calcu.IsOperationPressed = true;
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "/";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "/";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "/";
+            calcu.IsOperationPressed = true;
         }
 
         private void btnFrac_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "1/x";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "1/x";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "1/x";
+            calcu.IsOperationPressed = true;
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "x^2";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "x^2";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "x^2";
+            calcu.IsOperationPressed = true;
         }
 
         private void btnSqrt_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "sqrt";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "sqrt";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "sqrt";
+            calcu.IsOperationPressed = true;
+        
         }
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
-            if (calcu.NumA != "0")
-            {
-                btnEquals.PerformClick();
-                calcu.Operation = "%";
-                calcu.IsOperationPressed = true;
-            }
-            else
-            {
-                calcu.Operation = "%";
-                calcu.NumA = DisplayBox.Text;
-                float value = float.Parse(DisplayBox.Text);
-                DisplayBox.Text = value + " " + calcu.Operation;
-            }
+            //btnEquals.PerformClick();
+            calcu.Operation = "%";
+            calcu.IsOperationPressed = true;
         }
 
         //(Add-ons?)
@@ -260,46 +180,50 @@ namespace Project_Calculator
 
         private void btnClr_Click(object sender, EventArgs e)///
         {
-            DisplayBox.Clear();
+            DisplayBox.Clear();  
             label.Text = String.Empty;
-            //DisplayBox.Text = "0";
-            float kyut = float.Parse(calcu.NumA);
-            kyut = 0;
+            //calcu.Clr();
         }
 
         private void btnMplus_Click(object sender, EventArgs e)///
         {
             //Memory Add
-            calcu.Mstore1 += calcu.Result;
+            calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
             DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         private void btnMminus_Click(object sender, EventArgs e)///
         {
             //Memory minus
-            calcu.Mstore1 -= calcu.Result;
+            calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
             DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         private void btnMstore_Click(object sender, EventArgs e)
         {
             //Memory Store
-            calcu.Mstore1 = Decimal.Parse(DisplayBox.Text);
-            return;
+            calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
+            //return;
+
+            btnMClear.Enabled = true;
+            btnMRecall.Enabled = true;
         }
 
         private void btnMClear_Click(object sender, EventArgs e)
         {
             //Memory Clear
             calcu.Mstore1 = 0;
-            return;
+            //return;
+
+            btnMClear.Enabled = false;
+            btnMRecall.Enabled = false;
         }
 
         private void btnMRecall_Click(object sender, EventArgs e)
         {
             //Memory Recall
             DisplayBox.Text = calcu.Mstore1.ToString();
-            return;
+            //return;
         }
 
         //Miscellaneous
