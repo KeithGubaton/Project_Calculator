@@ -13,7 +13,6 @@ namespace Project_Calculator
     public partial class Calculator : Form
     {
         C_Class calcu = new C_Class();
-        private string memory = "";
         public Calculator()
         {
             InitializeComponent();
@@ -72,12 +71,12 @@ namespace Project_Calculator
         private void btnEquals_Click(object sender, EventArgs e)
         {
             calcu.NumA = DisplayBox.Text;
-            calcu.swtch();
+            calcu.operations();
             label.Text = System.Convert.ToString(calcu.NumA) + " " + calcu.Operation;
             DisplayBox.Text = calcu.NumA;
         }
 
-        //method for buttons
+        //METHOD FOR BUTTONS
 
         private void AppendButtons(String number)
         {
@@ -91,52 +90,45 @@ namespace Project_Calculator
             calcu.IsOperationPressed = false;
         }
 
-        //operations
+        //OPERATIONS
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "+";
             calcu.IsOperationPressed = true;
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "-";
             calcu.IsOperationPressed = true;
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "*";
             calcu.IsOperationPressed = true;
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "/";
             calcu.IsOperationPressed = true;
         }
 
         private void btnFrac_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "1/x";
             calcu.IsOperationPressed = true;
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "x^2";
             calcu.IsOperationPressed = true;
         }
 
         private void btnSqrt_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "sqrt";
             calcu.IsOperationPressed = true;
         
@@ -144,12 +136,11 @@ namespace Project_Calculator
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
-            //btnEquals.PerformClick();
             calcu.Operation = "%";
             calcu.IsOperationPressed = true;
         }
 
-        //(Add-ons?)
+        //SIGN & DECIMAL
         private void btnSign_Click(object sender, EventArgs e)
         {
             calcu.NumA = DisplayBox.Text;
@@ -164,7 +155,7 @@ namespace Project_Calculator
             DisplayBox.Text = calcu.NumA;         
         }
 
-        //Other Buttons
+        //OTHER BUTTONS
         private void btnDel_Click(object sender, EventArgs e)
         {
             calcu.NumA = DisplayBox.Text;
@@ -184,19 +175,7 @@ namespace Project_Calculator
             label.Text = String.Empty;
         }
 
-        //Miscellaneous
-        private void DisplayBox_TextChanged(object sender, EventArgs e)
-        {
-            if (DisplayBox.Text.Length > 15)
-            {
-                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
-            }
-            else
-            {
-                DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
-            }
-        }
-
+        // MEMORY BUTTONS
         private void btnMStore_Click(object sender, EventArgs e)
         {
             calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
@@ -227,6 +206,19 @@ namespace Project_Calculator
         {
             calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
             DisplayBox.Text = calcu.Mstore1.ToString();
+        }
+
+        //MISCELLANEOUS
+        private void DisplayBox_TextChanged(object sender, EventArgs e)
+        {
+            if (DisplayBox.Text.Length > 15)
+            {
+                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
+            }
+            else
+            {
+                DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
+            }
         }
     }
 }

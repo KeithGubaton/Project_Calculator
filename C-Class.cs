@@ -8,17 +8,12 @@ namespace Project_Calculator
 {
     class C_Class
     {
-        // class for calculator which have the methods
-        // turn private into public
-        // encapsulate private variables
-
         private String operation = "";
         private Boolean isOperationPressed = false;
         private String num = "";
         private String numA = "";
         private decimal Mstore = 0;
         private decimal result = 0;
-        private float variable;
         public string Num 
         { 
             get => num; 
@@ -49,8 +44,6 @@ namespace Project_Calculator
             get => result; 
             set => result = value; 
         }
-        public float Variable { get => variable; set => variable = value; }
-
 
         //Sign & Decimal (Add-ons?)
         public void Sign()
@@ -73,7 +66,7 @@ namespace Project_Calculator
             }
         }
 
-        //Miscellaneous
+        //MISCELLANEOUS
         public void Del()
         {
             if (NumA.Length > 0)
@@ -82,37 +75,8 @@ namespace Project_Calculator
             }
         }
 
-        public void MC()//
-        {
-            NumA = (0).ToString();
-        }
-
-        public void MS()//
-        {
-            NumA = Double.Parse(NumA).ToString();
-        }
-
-        public void MR()//
-        {
-            NumA = NumA.ToString();
-        }
-
-        public void MPlus()//
-        {
-            Mstore1 += decimal.Parse(NumA);
-            NumA = Mstore1.ToString();
-        }
-
-        public void Clr()
-        {
-            variable = float.Parse(NumA);
-            float sample = 0;
-            variable = sample;
-        }
-
-
-        //method for operations
-        public void swtch()
+        //METHOD FOR OPERATIONS
+        public void operations()
         {
             switch (Operation)
             {
@@ -137,6 +101,9 @@ namespace Project_Calculator
                 case "sqrt":
                     double numero = float.Parse(NumA);
                     NumA = Math.Sqrt(numero).ToString();
+                    break;
+                case "%":
+                    NumA = (float.Parse(NumA) / 100).ToString();
                     break;
                 default:
                     break;
