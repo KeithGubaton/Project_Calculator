@@ -105,17 +105,17 @@ namespace Project_Calculator
                     Show = System.Convert.ToString(NumA) + " " + Operation;
                     break;
                 case "1/x":
-                    NumA = (1 / double.Parse(NumA)).ToString();
+                    //NumA = (1 / double.Parse(NumA)).ToString();
                     Show = "1/" + System.Convert.ToString(Num);
                     break;
                 case "x^2":
-                    NumA = (double.Parse(NumA) * double.Parse(NumA)).ToString();
-                    Show = "(" + System.Convert.ToString(Num) + ")^2";
+                    //NumA = (double.Parse(NumA) * double.Parse(NumA)).ToString();
+                    Show = "(" + System.Convert.ToString(NumA) + ")^2";
                     break;
                 case "sqrt":
                     double numero = double.Parse(NumA);
                     NumA = Math.Sqrt(numero).ToString();
-                    Show = "sqrt(" + System.Convert.ToString(Num) + ")";
+                    Show = "sqrt(" + System.Convert.ToString(NumA) + ")";
                     break;
                 case "%":
                     NumA = (double.Parse(NumA) / 100).ToString();

@@ -74,24 +74,24 @@ namespace Project_Calculator
         {
             if (calcu.Operation.Equals("1/x"))
             {
-                //calcu.Num = DisplayBox.Text;
+                calcu.NumA = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-                //DisplayBox.Text = calcu.Num;
+                DisplayBox.Text = calcu.NumA;
             }
             else if (calcu.Operation.Equals("x^2"))
             {
-                //calcu.Num = DisplayBox.Text;
+                calcu.NumA = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-                //DisplayBox.Text = calcu.Num;
+                DisplayBox.Text = calcu.NumA;
             }
             else if (calcu.Operation.Equals("sqrt"))
             {
-                //calcu.Num = DisplayBox.Text;
+                //calcu.NumA = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-               // DisplayBox.Text = calcu.Num;
+                //DisplayBox.Text = calcu.NumA;
             }
             else if (calcu.Operation.Equals("%"))
             {
@@ -189,27 +189,42 @@ namespace Project_Calculator
 
         private void btnFrac_Click(object sender, EventArgs e)
         {
+            Double frac;
+            frac = Convert.ToDouble(1 / Convert.ToDouble(DisplayBox.Text));
+            DisplayBox.Text = frac.ToString();
             calcu.Operation = "1/x";
             calcu.IsOperationPressed = true;
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
         {
+            Double sqrd;
+            sqrd = double.Parse(DisplayBox.Text) * double.Parse(DisplayBox.Text);
+            DisplayBox.Text = sqrd.ToString();
             calcu.Operation = "x^2";
+            //label.Text = "(" + calcu.NumA + ")^2";
             calcu.IsOperationPressed = true;
         }
 
         private void btnSqrt_Click(object sender, EventArgs e)
         {
+            Double sqrt = double.Parse(DisplayBox.Text);
+            sqrt = Math.Sqrt(sqrt);
             calcu.Operation = "sqrt";
+            DisplayBox.Text = sqrt.ToString();
             calcu.IsOperationPressed = true;
+            //label.Text = "";
         
         }
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
+            Double percent;
+            percent = double.Parse(DisplayBox.Text) / 100;
+            DisplayBox.Text = percent.ToString();
             calcu.Operation = "%";
             calcu.IsOperationPressed = true;
+            //label
         }
 
         //SIGN & DECIMAL
