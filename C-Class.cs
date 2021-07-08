@@ -12,15 +12,9 @@ namespace Project_Calculator
         private Boolean isOperationPressed = false;
         private Double num = 0;
         private String numA = "";
-
         private decimal Mstore = 0;
-        private decimal result = 0;
         private string show;
-        //public string Num 
-       // { 
-           // get => num; 
-           // set => num = value; 
-        //}
+      
         public string Operation 
         { 
             get => operation; 
@@ -41,17 +35,16 @@ namespace Project_Calculator
             get => Mstore; 
             set => Mstore = value; 
         }
-        public decimal Result 
-        { 
-            get => result; 
-            set => result = value; 
-        }
         public string Show 
         { 
             get => show; 
             set => show = value; 
         }
-        public double Num { get => num; set => num = value; }
+        public double Num 
+        { 
+            get => num; 
+            set => num = value; 
+        }
 
         //Sign & Decimal (Add-ons?)
         public void Sign()

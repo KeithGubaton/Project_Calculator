@@ -21,6 +21,8 @@ namespace Project_Calculator
             DisplayBox.Text = "0";
         }
 
+
+        //METHOD FOR BUTTONS (Shortened)
         private void btnNumber_Click(object sender, EventArgs e)
         {
             Button num = (Button)sender;
@@ -36,73 +38,12 @@ namespace Project_Calculator
             DisplayBox.Text += num.Text;
             calcu.IsOperationPressed = false;
         }
-        private void btnZero_Click(object sender, EventArgs e)
-        {
-            AppendButtons("0");
-        }
-
-        private void btnOne_Click(object sender, EventArgs e)
-        {
-            AppendButtons("1");
-        }
-
-        private void btnTwo_Click(object sender, EventArgs e)
-        {
-            AppendButtons("2");
-        }
-
-        private void btnThree_Click(object sender, EventArgs e)
-        {
-            AppendButtons("3");
-        }
-
-        private void btnFour_Click(object sender, EventArgs e)
-        {
-            AppendButtons("4");
-        }
-
-        private void btnFive_Click(object sender, EventArgs e)
-        {
-            AppendButtons("5");
-        }
-
-        private void btnSix_Click(object sender, EventArgs e)
-        {
-            AppendButtons("6");
-        }
-
-        private void btnSeven_Click(object sender, EventArgs e)
-        {
-            AppendButtons("7");
-        }
-
-        private void btnEight_Click(object sender, EventArgs e)
-        {
-            AppendButtons("8");
-        }
-
-        private void btnNine_Click(object sender, EventArgs e)
-        {
-            AppendButtons("9");
-        }
-
-        //METHOD FOR BUTTONS
-        private void AppendButtons(String number)
-        {
-            if (calcu.IsOperationPressed)
-            {
-                DisplayBox.Text = "";
-            }
-
-            DisplayBox.Text += number;
-            calcu.IsOperationPressed = false;
-        }
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
             calcu.NumA = DisplayBox.Text;
             calcu.operations();
-            label.Text = calcu.Show;
+            ShowBox.Text = calcu.Show;
             DisplayBox.Text = calcu.NumA;
         }
 
@@ -185,33 +126,24 @@ namespace Project_Calculator
         //OTHER BUTTONS (DEL,CE,CLR)
         private void btnDel_Click(object sender, EventArgs e)
         {
-            calcu.NumA = DisplayBox.Text;
             calcu.Del();
             DisplayBox.Text = calcu.NumA;
         }
 
         private void btnCE_Click(object sender, EventArgs e)
         {
-            DisplayBox.Text = String.Empty;
-            label.Text = String.Empty;
+            DisplayBox.Text = calcu.NumA;
+            ShowBox.Text = String.Empty;
         }
 
         private void btnClr_Click(object sender, EventArgs e)
         {
-            DisplayBox.Clear();  
-            label.Text = String.Empty;
+            DisplayBox.Clear();
+            ShowBox.Text = String.Empty;
             calcu.Num = 0;
         }
 
         // MEMORY BUTTONS
-        private void btnMStore_Click(object sender, EventArgs e)
-        {
-            calcu.Mstore1 = decimal.Parse(DisplayBox.Text);
-
-            btnMClear.Enabled = true;
-            btnMRecall.Enabled = true;
-        }
-        
         private void btnMClear_Click(object sender, EventArgs e)
         {
             calcu.Mstore1 = 0;
@@ -219,21 +151,30 @@ namespace Project_Calculator
             btnMClear.Enabled = false;
             btnMRecall.Enabled = false;
         }
-        private void btnMRecall_Click(object sender, EventArgs e)
+
+        private void btnMStore_Click(object sender, EventArgs e)
         {
-            DisplayBox.Text = calcu.Mstore1.ToString();
+            calcu.Mstore1 += decimal.Parse(calcu.NumA);
+
+            btnMClear.Enabled = true;
+            btnMRecall.Enabled = true;
         }
 
-        private void btnMplus_Click(object sender, EventArgs e)
+        private void btnMRecall_Click(object sender, EventArgs e)
         {
-            calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
-            DisplayBox.Text = calcu.Mstore1.ToString();
+            calcu.NumA = calcu.Mstore1.ToString();
         }
 
         private void btnMminus_Click(object sender, EventArgs e)
         {
-            calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
-            DisplayBox.Text = calcu.Mstore1.ToString();
+            calcu.Mstore1 -= decimal.Parse(calcu.NumA);
+            calcu.NumA = calcu.Mstore1.ToString();
+        }
+
+        private void btnMplus_Click(object sender, EventArgs e)
+        {
+            calcu.Mstore1 += decimal.Parse(calcu.NumA);
+            calcu.NumA = calcu.Mstore1.ToString();
         }
 
         //MISCELLANEOUS
@@ -251,9 +192,9 @@ namespace Project_Calculator
 
         private void label_TextChanged(object sender, EventArgs e)
         {
-            if (label.Text.Length > 15)
+            if (ShowBox.Text.Length > 15)
             {
-                label.Font = new Font("Lucida Console", 9, FontStyle.Regular);
+                ShowBox.Font = new Font("Lucida Console", 9, FontStyle.Regular);
             }
             else
             {

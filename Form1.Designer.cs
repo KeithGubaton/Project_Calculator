@@ -61,9 +61,9 @@ namespace Project_Calculator
             this.btnMminus = new System.Windows.Forms.Button();
             this.btnMStore = new System.Windows.Forms.Button();
             this.DisplayBox = new System.Windows.Forms.TextBox();
-            this.label = new System.Windows.Forms.Label();
             this.btnMRecall = new System.Windows.Forms.Button();
             this.btnMClear = new System.Windows.Forms.Button();
+            this.ShowBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnFrac
@@ -539,20 +539,6 @@ namespace Project_Calculator
             this.DisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.DisplayBox.TextChanged += new System.EventHandler(this.DisplayBox_TextChanged);
             // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.BackColor = System.Drawing.Color.Black;
-            this.label.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label.ForeColor = System.Drawing.Color.Green;
-            this.label.Location = new System.Drawing.Point(168, 26);
-            this.label.Name = "label";
-            this.label.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label.Size = new System.Drawing.Size(15, 13);
-            this.label.TabIndex = 28;
-            this.label.Text = " ";
-            this.label.TextChanged += new System.EventHandler(this.label_TextChanged);
-            // 
             // btnMRecall
             // 
             this.btnMRecall.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
@@ -585,15 +571,28 @@ namespace Project_Calculator
             this.btnMClear.UseVisualStyleBackColor = true;
             this.btnMClear.Click += new System.EventHandler(this.btnMClear_Click);
             // 
+            // ShowBox
+            // 
+            this.ShowBox.BackColor = System.Drawing.Color.Black;
+            this.ShowBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ShowBox.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShowBox.ForeColor = System.Drawing.Color.Green;
+            this.ShowBox.Location = new System.Drawing.Point(15, 32);
+            this.ShowBox.Name = "ShowBox";
+            this.ShowBox.Size = new System.Drawing.Size(294, 16);
+            this.ShowBox.TabIndex = 31;
+            this.ShowBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ShowBox.TextChanged += new System.EventHandler(this.label_TextChanged);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(321, 434);
+            this.Controls.Add(this.ShowBox);
             this.Controls.Add(this.btnMClear);
             this.Controls.Add(this.btnMRecall);
-            this.Controls.Add(this.label);
             this.Controls.Add(this.DisplayBox);
             this.Controls.Add(this.btnMStore);
             this.Controls.Add(this.btnMminus);
@@ -664,9 +663,9 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnMminus;
         private System.Windows.Forms.Button btnMStore;
         private System.Windows.Forms.TextBox DisplayBox;
-        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button btnMRecall;
         private System.Windows.Forms.Button btnMClear;
+        private System.Windows.Forms.TextBox ShowBox;
     }
 }
 
