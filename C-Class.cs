@@ -10,16 +10,17 @@ namespace Project_Calculator
     {
         private String operation = "";
         private Boolean isOperationPressed = false;
-        private String num = "";
+        private Double num = 0;
         private String numA = "";
+
         private decimal Mstore = 0;
         private decimal result = 0;
         private string show;
-        public string Num 
-        { 
-            get => num; 
-            set => num = value; 
-        }
+        //public string Num 
+       // { 
+           // get => num; 
+           // set => num = value; 
+        //}
         public string Operation 
         { 
             get => operation; 
@@ -45,7 +46,12 @@ namespace Project_Calculator
             get => result; 
             set => result = value; 
         }
-        public string Show { get => show; set => show = value; }
+        public string Show 
+        { 
+            get => show; 
+            set => show = value; 
+        }
+        public double Num { get => num; set => num = value; }
 
         //Sign & Decimal (Add-ons?)
         public void Sign()
@@ -83,41 +89,42 @@ namespace Project_Calculator
             switch (Operation)
             {
                 case "+":
-                    NumA = (float.Parse(Num) + float.Parse(NumA)).ToString();
+                    NumA = (Num + double.Parse(NumA)).ToString();
                     Show = System.Convert.ToString(NumA) + " " + Operation;
                     break;
                 case "-":
-                    NumA = (float.Parse(Num) - float.Parse(NumA)).ToString();
+                    NumA = (Num - double.Parse(NumA)).ToString();
                     Show = System.Convert.ToString(NumA) + " " + Operation;
                     break;
                 case "*":
-                    NumA = (float.Parse(Num) * float.Parse(NumA)).ToString();
+                    NumA = (Num * double.Parse(NumA)).ToString();
                     Show = System.Convert.ToString(NumA) + " " + Operation;
                     break;
                 case "/":
-                    NumA = (float.Parse(Num) / float.Parse(NumA)).ToString();
+                    NumA = (Num / double.Parse(NumA)).ToString();
                     Show = System.Convert.ToString(NumA) + " " + Operation;
                     break;
                 case "1/x":
-                    NumA = (1 / float.Parse(NumA)).ToString();
+                    NumA = (1 / double.Parse(NumA)).ToString();
                     Show = "1/" + System.Convert.ToString(Num);
                     break;
                 case "x^2":
-                    NumA = (float.Parse(NumA) * float.Parse(NumA)).ToString();
+                    NumA = (double.Parse(NumA) * double.Parse(NumA)).ToString();
                     Show = "(" + System.Convert.ToString(Num) + ")^2";
                     break;
                 case "sqrt":
-                    double numero = float.Parse(NumA);
+                    double numero = double.Parse(NumA);
                     NumA = Math.Sqrt(numero).ToString();
                     Show = "sqrt(" + System.Convert.ToString(Num) + ")";
                     break;
                 case "%":
-                    NumA = (float.Parse(NumA) / 100).ToString();
+                    NumA = (double.Parse(NumA) / 100).ToString();
                     Show = System.Convert.ToString(Num) + "/100";
                     break;
                 default:
                     break;
             }
+            Num = Double.Parse(NumA);
         }
     }
 }

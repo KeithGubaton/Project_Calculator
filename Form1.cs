@@ -74,31 +74,31 @@ namespace Project_Calculator
         {
             if (calcu.Operation.Equals("1/x"))
             {
-                calcu.Num = DisplayBox.Text;
+                //calcu.Num = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-                DisplayBox.Text = calcu.Num;
+                //DisplayBox.Text = calcu.Num;
             }
             else if (calcu.Operation.Equals("x^2"))
             {
-                calcu.Num = DisplayBox.Text;
+                //calcu.Num = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-                DisplayBox.Text = calcu.Num;
+                //DisplayBox.Text = calcu.Num;
             }
             else if (calcu.Operation.Equals("sqrt"))
             {
-                calcu.Num = DisplayBox.Text;
+                //calcu.Num = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-                DisplayBox.Text = calcu.Num;
+               // DisplayBox.Text = calcu.Num;
             }
             else if (calcu.Operation.Equals("%"))
             {
-                calcu.Num = DisplayBox.Text;
+                //calcu.Num = DisplayBox.Text;
                 calcu.operations();
                 label.Text = calcu.Show;
-                DisplayBox.Text = calcu.Num;
+                //DisplayBox.Text = calcu.Num;
             }
 
             calcu.NumA = DisplayBox.Text;
@@ -113,7 +113,7 @@ namespace Project_Calculator
         {
             if (calcu.IsOperationPressed)
             {
-                calcu.Num = DisplayBox.Text;
+                //calcu.Num = DisplayBox.Text;
                 DisplayBox.Text = "";
             }
 
@@ -124,26 +124,67 @@ namespace Project_Calculator
         //OPERATIONS
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "+";
-            calcu.IsOperationPressed = true;
+            if (calcu.Num != 0)
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "+";
+                calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "+";
+                calcu.Num = Double.Parse(DisplayBox.Text);
+                calcu.IsOperationPressed = true;
+            }
+           
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "-";
-            calcu.IsOperationPressed = true;
+            if (calcu.Num != 0)
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "-";
+                calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "-";
+                calcu.Num = Double.Parse(DisplayBox.Text);
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "*";
-            calcu.IsOperationPressed = true;
+            if (calcu.Num != 0)
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "*";
+                calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "*";
+                calcu.Num = Double.Parse(DisplayBox.Text);
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            calcu.Operation = "/";
-            calcu.IsOperationPressed = true;
+            if (calcu.Num != 0)
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = "/";
+                calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = "/";
+                calcu.Num = Double.Parse(DisplayBox.Text);
+                calcu.IsOperationPressed = true;
+            }
         }
 
         private void btnFrac_Click(object sender, EventArgs e)
@@ -200,10 +241,11 @@ namespace Project_Calculator
             label.Text = String.Empty;
         }
 
-        private void btnClr_Click(object sender, EventArgs e)///
+        private void btnClr_Click(object sender, EventArgs e)
         {
             DisplayBox.Clear();  
             label.Text = String.Empty;
+            calcu.Num = 0;
         }
 
         // MEMORY BUTTONS
