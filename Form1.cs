@@ -113,7 +113,6 @@ namespace Project_Calculator
         {
             if (calcu.IsOperationPressed)
             {
-                //calcu.Num = DisplayBox.Text;
                 DisplayBox.Text = "";
             }
 
@@ -122,6 +121,25 @@ namespace Project_Calculator
         }
 
         //OPERATIONS
+
+        private void operator_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+
+            if (calcu.Num != 0)
+            {
+                btnEquals.PerformClick();
+                calcu.Operation = button.Text;
+                calcu.IsOperationPressed = true;
+            }
+            else
+            {
+                calcu.Operation = button.Text;
+                calcu.Num = Double.Parse(DisplayBox.Text);
+                calcu.IsOperationPressed = true;
+            }
+
+        }
         private void btnPlus_Click(object sender, EventArgs e)
         {
             if (calcu.Num != 0)
@@ -186,7 +204,7 @@ namespace Project_Calculator
                 calcu.IsOperationPressed = true;
             }
         }
-
+        //TO EDIT
         private void btnFrac_Click(object sender, EventArgs e)
         {
             Double frac;
@@ -194,6 +212,7 @@ namespace Project_Calculator
             DisplayBox.Text = frac.ToString();
             calcu.Operation = "1/x";
             calcu.IsOperationPressed = true;
+            label.Text = "1/" + calcu.NumA;
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
