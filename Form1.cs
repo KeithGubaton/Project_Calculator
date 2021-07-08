@@ -74,7 +74,7 @@ namespace Project_Calculator
             DisplayBox.Text = frac.ToString();
             calcu.Operation = "1/x";
             calcu.IsOperationPressed = true;
-            //label.Text = "1/" + 
+            ShowBox.Text = "1/" + calcu.Num;
         }
 
         private void btnSqrd_Click(object sender, EventArgs e)
@@ -190,7 +190,7 @@ namespace Project_Calculator
             }
         }
 
-        private void label_TextChanged(object sender, EventArgs e)
+        private void ShowBox_TextChanged(object sender, EventArgs e)
         {
             if (ShowBox.Text.Length > 15)
             {

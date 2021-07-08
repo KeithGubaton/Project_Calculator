@@ -582,7 +582,7 @@ namespace Project_Calculator
             this.ShowBox.Size = new System.Drawing.Size(294, 16);
             this.ShowBox.TabIndex = 31;
             this.ShowBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ShowBox.TextChanged += new System.EventHandler(this.label_TextChanged);
+            this.ShowBox.TextChanged += new System.EventHandler(this.ShowBox_TextChanged);
             // 
             // Calculator
             // 
