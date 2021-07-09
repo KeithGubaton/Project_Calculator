@@ -91,6 +91,7 @@ namespace Project_Calculator
         {
             DisplayBox.Text = calcu.NumA;
             ShowBox.Text = String.Empty;
+            DisplayBox.Text = "0";
         }
 
         private void btnClr_Click(object sender, EventArgs e)
@@ -98,6 +99,7 @@ namespace Project_Calculator
             DisplayBox.Clear();
             ShowBox.Text = String.Empty;
             calcu.Num = 0;
+            DisplayBox.Text = "0";
         }
 
         // MEMORY BUTTONS
