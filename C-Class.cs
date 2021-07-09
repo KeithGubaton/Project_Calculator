@@ -14,9 +14,7 @@ namespace Project_Calculator
         private String numA = "";
         private decimal Mstore = 0;
         private string show;
-        private Double forall;
-        private String result;
-      
+
         public string Operation 
         { 
             get => operation; 
@@ -47,8 +45,6 @@ namespace Project_Calculator
             get => num; 
             set => num = value; 
         }
-        public double Forall { get => forall; set => forall = value; }
-        public string Result { get => result; set => result = value; }
 
         //Sign & Decimal (Add-ons?)
         public void Sign()

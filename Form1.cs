@@ -139,11 +139,11 @@ namespace Project_Calculator
         {
             if (DisplayBox.Text.Length > 15)
             {
-                DisplayBox.Font = new Font("Lucida Console", 12, FontStyle.Regular);
+                DisplayBox.Font = new Font("Segoe UI", 12, FontStyle.Bold);
             }
             else
             {
-                DisplayBox.Font = new Font("Lucida Console", 24, FontStyle.Regular);
+                DisplayBox.Font = new Font("Segoe UI", 24, FontStyle.Bold);
             }
         }
 
@@ -151,11 +151,11 @@ namespace Project_Calculator
         {
             if (ShowBox.Text.Length > 15)
             {
-                ShowBox.Font = new Font("Lucida Console", 9, FontStyle.Regular);
+                ShowBox.Font = new Font("Segoe UI", 9, FontStyle.Bold);
             }
             else
             {
-                DisplayBox.Font = new Font("Lucida Console", 14, FontStyle.Regular);
+                DisplayBox.Font = new Font("Segoe UI", 14, FontStyle.Bold);
             }
         }
     }

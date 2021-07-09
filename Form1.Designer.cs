@@ -68,354 +68,376 @@ namespace Project_Calculator
             // 
             // btnFrac
             // 
-            this.btnFrac.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFrac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnFrac.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
             this.btnFrac.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnFrac.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnFrac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFrac.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFrac.ForeColor = System.Drawing.Color.Green;
-            this.btnFrac.Location = new System.Drawing.Point(14, 192);
+            this.btnFrac.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnFrac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnFrac.Location = new System.Drawing.Point(4, 207);
             this.btnFrac.Name = "btnFrac";
-            this.btnFrac.Size = new System.Drawing.Size(69, 43);
+            this.btnFrac.Size = new System.Drawing.Size(76, 48);
             this.btnFrac.TabIndex = 0;
             this.btnFrac.Text = "1/x";
-            this.btnFrac.UseVisualStyleBackColor = true;
+            this.btnFrac.UseVisualStyleBackColor = false;
             this.btnFrac.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnSqrd
             // 
-            this.btnSqrd.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnSqrd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnSqrd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnSqrd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnSqrd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnSqrd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnSqrd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnSqrd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSqrd.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSqrd.ForeColor = System.Drawing.Color.Green;
-            this.btnSqrd.Location = new System.Drawing.Point(89, 192);
+            this.btnSqrd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSqrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnSqrd.Location = new System.Drawing.Point(84, 207);
             this.btnSqrd.Name = "btnSqrd";
-            this.btnSqrd.Size = new System.Drawing.Size(69, 43);
+            this.btnSqrd.Size = new System.Drawing.Size(76, 48);
             this.btnSqrd.TabIndex = 1;
             this.btnSqrd.Text = "x^2";
-            this.btnSqrd.UseVisualStyleBackColor = true;
+            this.btnSqrd.UseVisualStyleBackColor = false;
             this.btnSqrd.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnSqrt
             // 
-            this.btnSqrt.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSqrt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnSqrt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
             this.btnSqrt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnSqrt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSqrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSqrt.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSqrt.ForeColor = System.Drawing.Color.Green;
-            this.btnSqrt.Location = new System.Drawing.Point(164, 192);
+            this.btnSqrt.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSqrt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnSqrt.Location = new System.Drawing.Point(164, 207);
             this.btnSqrt.Name = "btnSqrt";
-            this.btnSqrt.Size = new System.Drawing.Size(69, 43);
+            this.btnSqrt.Size = new System.Drawing.Size(76, 48);
             this.btnSqrt.TabIndex = 2;
             this.btnSqrt.Text = "sqrt";
-            this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.UseVisualStyleBackColor = false;
             this.btnSqrt.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnDivide
             // 
-            this.btnDivide.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnDivide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnDivide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnDivide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnDivide.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnDivide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnDivide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDivide.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDivide.ForeColor = System.Drawing.Color.Green;
-            this.btnDivide.Location = new System.Drawing.Point(239, 192);
+            this.btnDivide.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDivide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnDivide.Location = new System.Drawing.Point(244, 207);
             this.btnDivide.Name = "btnDivide";
-            this.btnDivide.Size = new System.Drawing.Size(69, 43);
+            this.btnDivide.Size = new System.Drawing.Size(76, 48);
             this.btnDivide.TabIndex = 3;
             this.btnDivide.Text = "/";
-            this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.UseVisualStyleBackColor = false;
             this.btnDivide.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnSeven
             // 
-            this.btnSeven.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnSeven.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnSeven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnSeven.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSeven.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSeven.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnSeven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeven.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSeven.ForeColor = System.Drawing.Color.Green;
-            this.btnSeven.Location = new System.Drawing.Point(14, 238);
+            this.btnSeven.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSeven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnSeven.Location = new System.Drawing.Point(4, 260);
             this.btnSeven.Name = "btnSeven";
-            this.btnSeven.Size = new System.Drawing.Size(69, 43);
+            this.btnSeven.Size = new System.Drawing.Size(76, 48);
             this.btnSeven.TabIndex = 4;
             this.btnSeven.Text = "7";
-            this.btnSeven.UseVisualStyleBackColor = true;
+            this.btnSeven.UseVisualStyleBackColor = false;
             this.btnSeven.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnEight
             // 
-            this.btnEight.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnEight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnEight.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnEight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnEight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEight.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEight.ForeColor = System.Drawing.Color.Green;
-            this.btnEight.Location = new System.Drawing.Point(89, 238);
+            this.btnEight.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnEight.Location = new System.Drawing.Point(84, 260);
             this.btnEight.Name = "btnEight";
-            this.btnEight.Size = new System.Drawing.Size(69, 43);
+            this.btnEight.Size = new System.Drawing.Size(76, 48);
             this.btnEight.TabIndex = 5;
             this.btnEight.Text = "8";
-            this.btnEight.UseVisualStyleBackColor = true;
+            this.btnEight.UseVisualStyleBackColor = false;
             this.btnEight.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnNine
             // 
-            this.btnNine.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnNine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnNine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnNine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnNine.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnNine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnNine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNine.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnNine.ForeColor = System.Drawing.Color.Green;
-            this.btnNine.Location = new System.Drawing.Point(164, 238);
+            this.btnNine.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnNine.Location = new System.Drawing.Point(164, 260);
             this.btnNine.Name = "btnNine";
-            this.btnNine.Size = new System.Drawing.Size(69, 43);
+            this.btnNine.Size = new System.Drawing.Size(76, 48);
             this.btnNine.TabIndex = 6;
             this.btnNine.Text = "9";
-            this.btnNine.UseVisualStyleBackColor = true;
+            this.btnNine.UseVisualStyleBackColor = false;
             this.btnNine.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnPercent
             // 
-            this.btnPercent.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnPercent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnPercent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnPercent.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnPercent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnPercent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPercent.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPercent.ForeColor = System.Drawing.Color.Green;
-            this.btnPercent.Location = new System.Drawing.Point(14, 146);
+            this.btnPercent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPercent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnPercent.Location = new System.Drawing.Point(4, 154);
             this.btnPercent.Name = "btnPercent";
-            this.btnPercent.Size = new System.Drawing.Size(69, 43);
+            this.btnPercent.Size = new System.Drawing.Size(76, 48);
             this.btnPercent.TabIndex = 7;
             this.btnPercent.Text = "%";
-            this.btnPercent.UseVisualStyleBackColor = true;
+            this.btnPercent.UseVisualStyleBackColor = false;
             this.btnPercent.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnCE
             // 
-            this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnCE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
             this.btnCE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCE.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCE.ForeColor = System.Drawing.Color.Green;
-            this.btnCE.Location = new System.Drawing.Point(89, 146);
+            this.btnCE.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnCE.Location = new System.Drawing.Point(84, 154);
             this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(69, 43);
+            this.btnCE.Size = new System.Drawing.Size(76, 48);
             this.btnCE.TabIndex = 8;
             this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.UseVisualStyleBackColor = false;
             this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // btnClr
             // 
-            this.btnClr.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnClr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnClr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnClr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnClr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnClr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnClr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClr.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClr.ForeColor = System.Drawing.Color.Green;
-            this.btnClr.Location = new System.Drawing.Point(164, 146);
+            this.btnClr.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnClr.Location = new System.Drawing.Point(164, 154);
             this.btnClr.Name = "btnClr";
-            this.btnClr.Size = new System.Drawing.Size(69, 43);
+            this.btnClr.Size = new System.Drawing.Size(76, 48);
             this.btnClr.TabIndex = 9;
             this.btnClr.Text = "C";
-            this.btnClr.UseVisualStyleBackColor = true;
+            this.btnClr.UseVisualStyleBackColor = false;
             this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
             // 
             // btnSix
             // 
-            this.btnSix.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSix.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnSix.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnSix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSix.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSix.ForeColor = System.Drawing.Color.Green;
-            this.btnSix.Location = new System.Drawing.Point(164, 284);
+            this.btnSix.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnSix.Location = new System.Drawing.Point(164, 313);
             this.btnSix.Name = "btnSix";
-            this.btnSix.Size = new System.Drawing.Size(69, 43);
+            this.btnSix.Size = new System.Drawing.Size(76, 48);
             this.btnSix.TabIndex = 10;
             this.btnSix.Text = "6";
-            this.btnSix.UseVisualStyleBackColor = true;
+            this.btnSix.UseVisualStyleBackColor = false;
             this.btnSix.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnMultiply
             // 
-            this.btnMultiply.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMultiply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnMultiply.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
             this.btnMultiply.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnMultiply.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMultiply.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMultiply.ForeColor = System.Drawing.Color.Green;
-            this.btnMultiply.Location = new System.Drawing.Point(239, 238);
+            this.btnMultiply.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMultiply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnMultiply.Location = new System.Drawing.Point(244, 260);
             this.btnMultiply.Name = "btnMultiply";
-            this.btnMultiply.Size = new System.Drawing.Size(69, 43);
+            this.btnMultiply.Size = new System.Drawing.Size(76, 48);
             this.btnMultiply.TabIndex = 11;
             this.btnMultiply.Text = "*";
-            this.btnMultiply.UseVisualStyleBackColor = true;
+            this.btnMultiply.UseVisualStyleBackColor = false;
             this.btnMultiply.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnDel
             // 
-            this.btnDel.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnDel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
             this.btnDel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnDel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDel.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDel.ForeColor = System.Drawing.Color.Green;
-            this.btnDel.Location = new System.Drawing.Point(239, 146);
+            this.btnDel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnDel.Location = new System.Drawing.Point(244, 154);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(69, 43);
+            this.btnDel.Size = new System.Drawing.Size(76, 48);
             this.btnDel.TabIndex = 12;
             this.btnDel.Text = "<--";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnMinus
             // 
-            this.btnMinus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnMinus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnMinus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnMinus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnMinus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnMinus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMinus.ForeColor = System.Drawing.Color.Green;
-            this.btnMinus.Location = new System.Drawing.Point(239, 284);
+            this.btnMinus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnMinus.Location = new System.Drawing.Point(244, 313);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(69, 43);
+            this.btnMinus.Size = new System.Drawing.Size(76, 48);
             this.btnMinus.TabIndex = 13;
             this.btnMinus.Text = "-";
-            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.UseVisualStyleBackColor = false;
             this.btnMinus.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnFour
             // 
-            this.btnFour.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnFour.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnFour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFour.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFour.ForeColor = System.Drawing.Color.Green;
-            this.btnFour.Location = new System.Drawing.Point(14, 284);
+            this.btnFour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnFour.Location = new System.Drawing.Point(4, 313);
             this.btnFour.Name = "btnFour";
-            this.btnFour.Size = new System.Drawing.Size(69, 43);
+            this.btnFour.Size = new System.Drawing.Size(76, 48);
             this.btnFour.TabIndex = 14;
             this.btnFour.Text = "4";
-            this.btnFour.UseVisualStyleBackColor = true;
+            this.btnFour.UseVisualStyleBackColor = false;
             this.btnFour.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnFive
             // 
-            this.btnFive.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnFive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnFive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnFive.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnFive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFive.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFive.ForeColor = System.Drawing.Color.Green;
-            this.btnFive.Location = new System.Drawing.Point(89, 284);
+            this.btnFive.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnFive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnFive.Location = new System.Drawing.Point(84, 313);
             this.btnFive.Name = "btnFive";
-            this.btnFive.Size = new System.Drawing.Size(69, 43);
+            this.btnFive.Size = new System.Drawing.Size(76, 48);
             this.btnFive.TabIndex = 15;
             this.btnFive.Text = "5";
-            this.btnFive.UseVisualStyleBackColor = true;
+            this.btnFive.UseVisualStyleBackColor = false;
             this.btnFive.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnOne
             // 
-            this.btnOne.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnOne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnOne.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnOne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOne.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOne.ForeColor = System.Drawing.Color.Green;
-            this.btnOne.Location = new System.Drawing.Point(14, 330);
+            this.btnOne.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnOne.Location = new System.Drawing.Point(4, 366);
             this.btnOne.Name = "btnOne";
-            this.btnOne.Size = new System.Drawing.Size(69, 43);
+            this.btnOne.Size = new System.Drawing.Size(76, 48);
             this.btnOne.TabIndex = 16;
             this.btnOne.Text = "1";
-            this.btnOne.UseVisualStyleBackColor = true;
+            this.btnOne.UseVisualStyleBackColor = false;
             this.btnOne.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnTwo
             // 
-            this.btnTwo.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnTwo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnTwo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTwo.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTwo.ForeColor = System.Drawing.Color.Green;
-            this.btnTwo.Location = new System.Drawing.Point(89, 330);
+            this.btnTwo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnTwo.Location = new System.Drawing.Point(84, 366);
             this.btnTwo.Name = "btnTwo";
-            this.btnTwo.Size = new System.Drawing.Size(69, 43);
+            this.btnTwo.Size = new System.Drawing.Size(76, 48);
             this.btnTwo.TabIndex = 17;
             this.btnTwo.Text = "2";
-            this.btnTwo.UseVisualStyleBackColor = true;
+            this.btnTwo.UseVisualStyleBackColor = false;
             this.btnTwo.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnThree
             // 
-            this.btnThree.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnThree.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnThree.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnThree.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThree.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnThree.ForeColor = System.Drawing.Color.Green;
-            this.btnThree.Location = new System.Drawing.Point(164, 330);
+            this.btnThree.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnThree.Location = new System.Drawing.Point(164, 366);
             this.btnThree.Name = "btnThree";
-            this.btnThree.Size = new System.Drawing.Size(69, 43);
+            this.btnThree.Size = new System.Drawing.Size(76, 48);
             this.btnThree.TabIndex = 21;
             this.btnThree.Text = "3";
-            this.btnThree.UseVisualStyleBackColor = true;
+            this.btnThree.UseVisualStyleBackColor = false;
             this.btnThree.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnPlus
             // 
-            this.btnPlus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
+            this.btnPlus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(105)))), ((int)(((byte)(104)))));
             this.btnPlus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnPlus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPlus.ForeColor = System.Drawing.Color.Green;
-            this.btnPlus.Location = new System.Drawing.Point(239, 330);
+            this.btnPlus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnPlus.Location = new System.Drawing.Point(244, 366);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(69, 43);
+            this.btnPlus.Size = new System.Drawing.Size(76, 48);
             this.btnPlus.TabIndex = 20;
             this.btnPlus.Text = "+";
-            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.UseVisualStyleBackColor = false;
             this.btnPlus.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnEquals
             // 
+            this.btnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
             this.btnEquals.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnEquals.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnEquals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnEquals.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnEquals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEquals.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEquals.ForeColor = System.Drawing.Color.Green;
-            this.btnEquals.Location = new System.Drawing.Point(239, 376);
+            this.btnEquals.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEquals.ForeColor = System.Drawing.Color.Black;
+            this.btnEquals.Location = new System.Drawing.Point(244, 419);
             this.btnEquals.Name = "btnEquals";
-            this.btnEquals.Size = new System.Drawing.Size(69, 43);
+            this.btnEquals.Size = new System.Drawing.Size(76, 48);
             this.btnEquals.TabIndex = 19;
             this.btnEquals.Text = "=";
-            this.btnEquals.UseVisualStyleBackColor = true;
+            this.btnEquals.UseVisualStyleBackColor = false;
             this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btnSign
             // 
-            this.btnSign.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSign.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnSign.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnSign.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSign.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSign.ForeColor = System.Drawing.Color.Green;
-            this.btnSign.Location = new System.Drawing.Point(14, 376);
+            this.btnSign.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnSign.Location = new System.Drawing.Point(4, 419);
             this.btnSign.Name = "btnSign";
-            this.btnSign.Size = new System.Drawing.Size(69, 43);
+            this.btnSign.Size = new System.Drawing.Size(76, 48);
             this.btnSign.TabIndex = 18;
             this.btnSign.Text = "+/-";
-            this.btnSign.UseVisualStyleBackColor = true;
+            this.btnSign.UseVisualStyleBackColor = false;
             this.btnSign.Click += new System.EventHandler(this.btnSign_Click);
             // 
             // button28
@@ -447,80 +469,84 @@ namespace Project_Calculator
             // 
             // btnZero
             // 
-            this.btnZero.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnZero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnZero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnZero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnZero.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnZero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnZero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZero.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnZero.ForeColor = System.Drawing.Color.Green;
-            this.btnZero.Location = new System.Drawing.Point(89, 376);
+            this.btnZero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnZero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnZero.Location = new System.Drawing.Point(84, 419);
             this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(69, 43);
+            this.btnZero.Size = new System.Drawing.Size(76, 48);
             this.btnZero.TabIndex = 22;
             this.btnZero.Text = "0";
-            this.btnZero.UseVisualStyleBackColor = true;
+            this.btnZero.UseVisualStyleBackColor = false;
             this.btnZero.Click += new System.EventHandler(this.btnNumber_Click);
             // 
             // btnDecimal
             // 
-            this.btnDecimal.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnDecimal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnDecimal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnDecimal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnDecimal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDecimal.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDecimal.ForeColor = System.Drawing.Color.Green;
-            this.btnDecimal.Location = new System.Drawing.Point(164, 376);
+            this.btnDecimal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDecimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.btnDecimal.Location = new System.Drawing.Point(164, 419);
             this.btnDecimal.Name = "btnDecimal";
-            this.btnDecimal.Size = new System.Drawing.Size(69, 43);
+            this.btnDecimal.Size = new System.Drawing.Size(76, 48);
             this.btnDecimal.TabIndex = 23;
             this.btnDecimal.Text = ".";
-            this.btnDecimal.UseVisualStyleBackColor = true;
+            this.btnDecimal.UseVisualStyleBackColor = false;
             this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
             // 
             // btnMplus
             // 
-            this.btnMplus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnMplus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnMplus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnMplus.BackColor = System.Drawing.Color.Transparent;
+            this.btnMplus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMplus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnMplus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMplus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMplus.ForeColor = System.Drawing.Color.Green;
-            this.btnMplus.Location = new System.Drawing.Point(74, 107);
+            this.btnMplus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMplus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
+            this.btnMplus.Location = new System.Drawing.Point(67, 117);
             this.btnMplus.Name = "btnMplus";
-            this.btnMplus.Size = new System.Drawing.Size(54, 33);
+            this.btnMplus.Size = new System.Drawing.Size(65, 33);
             this.btnMplus.TabIndex = 24;
             this.btnMplus.Text = "M+";
-            this.btnMplus.UseVisualStyleBackColor = true;
+            this.btnMplus.UseVisualStyleBackColor = false;
             this.btnMplus.Click += new System.EventHandler(this.btnMplus_Click);
             // 
             // btnMminus
             // 
-            this.btnMminus.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMminus.BackColor = System.Drawing.Color.Transparent;
+            this.btnMminus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMminus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnMminus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMminus.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMminus.ForeColor = System.Drawing.Color.Green;
-            this.btnMminus.Location = new System.Drawing.Point(134, 107);
+            this.btnMminus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMminus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
+            this.btnMminus.Location = new System.Drawing.Point(131, 117);
             this.btnMminus.Name = "btnMminus";
-            this.btnMminus.Size = new System.Drawing.Size(54, 33);
+            this.btnMminus.Size = new System.Drawing.Size(65, 33);
             this.btnMminus.TabIndex = 25;
             this.btnMminus.Text = "M-";
-            this.btnMminus.UseVisualStyleBackColor = true;
+            this.btnMminus.UseVisualStyleBackColor = false;
             this.btnMminus.Click += new System.EventHandler(this.btnMminus_Click);
             // 
             // btnMStore
             // 
-            this.btnMStore.BackColor = System.Drawing.Color.Black;
-            this.btnMStore.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMStore.BackColor = System.Drawing.Color.Transparent;
+            this.btnMStore.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMStore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnMStore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMStore.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMStore.ForeColor = System.Drawing.Color.Green;
-            this.btnMStore.Location = new System.Drawing.Point(254, 107);
+            this.btnMStore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMStore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
+            this.btnMStore.Location = new System.Drawing.Point(255, 117);
             this.btnMStore.Name = "btnMStore";
-            this.btnMStore.Size = new System.Drawing.Size(54, 33);
+            this.btnMStore.Size = new System.Drawing.Size(65, 33);
             this.btnMStore.TabIndex = 26;
             this.btnMStore.Text = "MS";
             this.btnMStore.UseVisualStyleBackColor = false;
@@ -528,58 +554,60 @@ namespace Project_Calculator
             // 
             // DisplayBox
             // 
-            this.DisplayBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.DisplayBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DisplayBox.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DisplayBox.ForeColor = System.Drawing.Color.Green;
-            this.DisplayBox.Location = new System.Drawing.Point(14, 54);
+            this.DisplayBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DisplayBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            this.DisplayBox.Location = new System.Drawing.Point(4, 54);
             this.DisplayBox.Name = "DisplayBox";
-            this.DisplayBox.Size = new System.Drawing.Size(294, 32);
+            this.DisplayBox.Size = new System.Drawing.Size(316, 43);
             this.DisplayBox.TabIndex = 27;
             this.DisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.DisplayBox.TextChanged += new System.EventHandler(this.DisplayBox_TextChanged);
             // 
             // btnMRecall
             // 
-            this.btnMRecall.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnMRecall.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
-            this.btnMRecall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.btnMRecall.BackColor = System.Drawing.Color.Transparent;
+            this.btnMRecall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMRecall.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btnMRecall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnMRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMRecall.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMRecall.ForeColor = System.Drawing.Color.Green;
-            this.btnMRecall.Location = new System.Drawing.Point(194, 107);
+            this.btnMRecall.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMRecall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
+            this.btnMRecall.Location = new System.Drawing.Point(195, 117);
             this.btnMRecall.Name = "btnMRecall";
-            this.btnMRecall.Size = new System.Drawing.Size(54, 33);
+            this.btnMRecall.Size = new System.Drawing.Size(65, 33);
             this.btnMRecall.TabIndex = 29;
             this.btnMRecall.Text = "MR";
-            this.btnMRecall.UseVisualStyleBackColor = true;
+            this.btnMRecall.UseVisualStyleBackColor = false;
             this.btnMRecall.Click += new System.EventHandler(this.btnMRecall_Click);
             // 
             // btnMClear
             // 
-            this.btnMClear.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnMClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnMClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
             this.btnMClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.btnMClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMClear.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMClear.ForeColor = System.Drawing.Color.Green;
-            this.btnMClear.Location = new System.Drawing.Point(14, 107);
+            this.btnMClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
+            this.btnMClear.Location = new System.Drawing.Point(4, 117);
             this.btnMClear.Name = "btnMClear";
-            this.btnMClear.Size = new System.Drawing.Size(54, 33);
+            this.btnMClear.Size = new System.Drawing.Size(65, 33);
             this.btnMClear.TabIndex = 30;
             this.btnMClear.Text = "MC";
-            this.btnMClear.UseVisualStyleBackColor = true;
+            this.btnMClear.UseVisualStyleBackColor = false;
             this.btnMClear.Click += new System.EventHandler(this.btnMClear_Click);
             // 
             // ShowBox
             // 
-            this.ShowBox.BackColor = System.Drawing.Color.Black;
+            this.ShowBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ShowBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ShowBox.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShowBox.ForeColor = System.Drawing.Color.Green;
+            this.ShowBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ShowBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(233)))));
             this.ShowBox.Location = new System.Drawing.Point(15, 32);
             this.ShowBox.Name = "ShowBox";
-            this.ShowBox.Size = new System.Drawing.Size(294, 16);
+            this.ShowBox.Size = new System.Drawing.Size(294, 22);
             this.ShowBox.TabIndex = 31;
             this.ShowBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ShowBox.TextChanged += new System.EventHandler(this.ShowBox_TextChanged);
@@ -588,8 +616,8 @@ namespace Project_Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(321, 434);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(327, 473);
             this.Controls.Add(this.ShowBox);
             this.Controls.Add(this.btnMClear);
             this.Controls.Add(this.btnMRecall);
@@ -621,6 +649,7 @@ namespace Project_Calculator
             this.Controls.Add(this.btnSqrt);
             this.Controls.Add(this.btnSqrd);
             this.Controls.Add(this.btnFrac);
+            this.ForeColor = System.Drawing.Color.Lime;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Calculator";
