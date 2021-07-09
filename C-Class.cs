@@ -14,6 +14,8 @@ namespace Project_Calculator
         private String numA = "";
         private decimal Mstore = 0;
         private string show;
+        private Double forall;
+        private String result;
       
         public string Operation 
         { 
@@ -45,6 +47,8 @@ namespace Project_Calculator
             get => num; 
             set => num = value; 
         }
+        public double Forall { get => forall; set => forall = value; }
+        public string Result { get => result; set => result = value; }
 
         //Sign & Decimal (Add-ons?)
         public void Sign()
@@ -98,21 +102,21 @@ namespace Project_Calculator
                     Show = System.Convert.ToString(NumA) + " " + Operation;
                     break;
                 case "1/x":
-                    //NumA = (1 / double.Parse(NumA)).ToString();
+                    NumA = System.Convert.ToString((1 / double.Parse(NumA)));
                     Show = "1/" + System.Convert.ToString(Num);
                     break;
+                case "%":
+                    NumA = System.Convert.ToString((double.Parse(NumA) / 100));
+                    Show = System.Convert.ToString(Num) + "/100";
+                    break;
                 case "x^2":
-                    //NumA = (double.Parse(NumA) * double.Parse(NumA)).ToString();
-                    Show = "(" + System.Convert.ToString(NumA) + ")^2";
+                    NumA = System.Convert.ToString((double.Parse(NumA) * double.Parse(NumA)));
+                    Show = "(" + System.Convert.ToString(Num) + ")^2";
                     break;
                 case "sqrt":
                     double numero = double.Parse(NumA);
-                    NumA = Math.Sqrt(numero).ToString();
-                    Show = "sqrt(" + System.Convert.ToString(NumA) + ")";
-                    break;
-                case "%":
-                    NumA = (double.Parse(NumA) / 100).ToString();
-                    Show = System.Convert.ToString(Num) + "/100";
+                    NumA = System.Convert.ToString(Math.Sqrt(numero));
+                    Show = "sqrt(" + System.Convert.ToString(Num) + ")";
                     break;
                 default:
                     break;

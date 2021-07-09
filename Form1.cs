@@ -21,7 +21,6 @@ namespace Project_Calculator
             DisplayBox.Text = "0";
         }
 
-
         //METHOD FOR BUTTONS (Shortened)
         private void btnNumber_Click(object sender, EventArgs e)
         {
@@ -64,48 +63,6 @@ namespace Project_Calculator
                 calcu.Num = Double.Parse(DisplayBox.Text);
                 calcu.IsOperationPressed = true;
             }
-        }
-
-        //TO EDIT OTHER OPERATIONS
-        private void btnFrac_Click(object sender, EventArgs e)
-        {
-            Double frac;
-            frac = Convert.ToDouble(1 / Convert.ToDouble(DisplayBox.Text));
-            DisplayBox.Text = frac.ToString();
-            calcu.Operation = "1/x";
-            calcu.IsOperationPressed = true;
-            ShowBox.Text = "1/" + calcu.Num;
-        }
-
-        private void btnSqrd_Click(object sender, EventArgs e)
-        {
-            Double sqrd;
-            sqrd = double.Parse(DisplayBox.Text) * double.Parse(DisplayBox.Text);
-            DisplayBox.Text = sqrd.ToString();
-            calcu.Operation = "x^2";
-            //label.Text = "(" + calcu.NumA + ")^2";
-            calcu.IsOperationPressed = true;
-        }
-
-        private void btnSqrt_Click(object sender, EventArgs e)
-        {
-            Double sqrt = double.Parse(DisplayBox.Text);
-            sqrt = Math.Sqrt(sqrt);
-            calcu.Operation = "sqrt";
-            DisplayBox.Text = sqrt.ToString();
-            calcu.IsOperationPressed = true;
-            //label.Text = "";
-        
-        }
-
-        private void btnPercent_Click(object sender, EventArgs e)
-        {
-            Double percent;
-            percent = double.Parse(DisplayBox.Text) / 100;
-            DisplayBox.Text = percent.ToString();
-            calcu.Operation = "%";
-            calcu.IsOperationPressed = true;
-            //label
         }
 
         //SIGN & DECIMAL
@@ -154,7 +111,7 @@ namespace Project_Calculator
 
         private void btnMStore_Click(object sender, EventArgs e)
         {
-            calcu.Mstore1 += decimal.Parse(calcu.NumA);
+            calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
 
             btnMClear.Enabled = true;
             btnMRecall.Enabled = true;
@@ -162,19 +119,19 @@ namespace Project_Calculator
 
         private void btnMRecall_Click(object sender, EventArgs e)
         {
-            calcu.NumA = calcu.Mstore1.ToString();
+            DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         private void btnMminus_Click(object sender, EventArgs e)
         {
-            calcu.Mstore1 -= decimal.Parse(calcu.NumA);
-            calcu.NumA = calcu.Mstore1.ToString();
+            calcu.Mstore1 -= decimal.Parse(DisplayBox.Text);
+            DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         private void btnMplus_Click(object sender, EventArgs e)
         {
-            calcu.Mstore1 += decimal.Parse(calcu.NumA);
-            calcu.NumA = calcu.Mstore1.ToString();
+            calcu.Mstore1 += decimal.Parse(DisplayBox.Text);
+            DisplayBox.Text = calcu.Mstore1.ToString();
         }
 
         //MISCELLANEOUS

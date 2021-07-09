@@ -80,7 +80,7 @@ namespace Project_Calculator
             this.btnFrac.TabIndex = 0;
             this.btnFrac.Text = "1/x";
             this.btnFrac.UseVisualStyleBackColor = true;
-            this.btnFrac.Click += new System.EventHandler(this.btnFrac_Click);
+            this.btnFrac.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnSqrd
             // 
@@ -96,7 +96,7 @@ namespace Project_Calculator
             this.btnSqrd.TabIndex = 1;
             this.btnSqrd.Text = "x^2";
             this.btnSqrd.UseVisualStyleBackColor = true;
-            this.btnSqrd.Click += new System.EventHandler(this.btnSqrd_Click);
+            this.btnSqrd.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnSqrt
             // 
@@ -112,7 +112,7 @@ namespace Project_Calculator
             this.btnSqrt.TabIndex = 2;
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = true;
-            this.btnSqrt.Click += new System.EventHandler(this.btnSqrt_Click);
+            this.btnSqrt.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnDivide
             // 
@@ -192,7 +192,7 @@ namespace Project_Calculator
             this.btnPercent.TabIndex = 7;
             this.btnPercent.Text = "%";
             this.btnPercent.UseVisualStyleBackColor = true;
-            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
+            this.btnPercent.Click += new System.EventHandler(this.operator_Click);
             // 
             // btnCE
             // 
