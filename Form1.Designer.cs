@@ -64,6 +64,7 @@ namespace Project_Calculator
             this.btnMRecall = new System.Windows.Forms.Button();
             this.btnMClear = new System.Windows.Forms.Button();
             this.ShowBox = new System.Windows.Forms.TextBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFrac
@@ -75,7 +76,7 @@ namespace Project_Calculator
             this.btnFrac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrac.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnFrac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnFrac.Location = new System.Drawing.Point(4, 207);
+            this.btnFrac.Location = new System.Drawing.Point(5, 241);
             this.btnFrac.Name = "btnFrac";
             this.btnFrac.Size = new System.Drawing.Size(76, 48);
             this.btnFrac.TabIndex = 0;
@@ -92,7 +93,7 @@ namespace Project_Calculator
             this.btnSqrd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSqrd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSqrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnSqrd.Location = new System.Drawing.Point(84, 207);
+            this.btnSqrd.Location = new System.Drawing.Point(85, 241);
             this.btnSqrd.Name = "btnSqrd";
             this.btnSqrd.Size = new System.Drawing.Size(76, 48);
             this.btnSqrd.TabIndex = 1;
@@ -109,7 +110,7 @@ namespace Project_Calculator
             this.btnSqrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSqrt.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSqrt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnSqrt.Location = new System.Drawing.Point(164, 207);
+            this.btnSqrt.Location = new System.Drawing.Point(165, 241);
             this.btnSqrt.Name = "btnSqrt";
             this.btnSqrt.Size = new System.Drawing.Size(76, 48);
             this.btnSqrt.TabIndex = 2;
@@ -126,7 +127,7 @@ namespace Project_Calculator
             this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivide.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDivide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnDivide.Location = new System.Drawing.Point(244, 207);
+            this.btnDivide.Location = new System.Drawing.Point(245, 241);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(76, 48);
             this.btnDivide.TabIndex = 3;
@@ -143,7 +144,7 @@ namespace Project_Calculator
             this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeven.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSeven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnSeven.Location = new System.Drawing.Point(4, 260);
+            this.btnSeven.Location = new System.Drawing.Point(5, 294);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(76, 48);
             this.btnSeven.TabIndex = 4;
@@ -160,7 +161,7 @@ namespace Project_Calculator
             this.btnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEight.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnEight.Location = new System.Drawing.Point(84, 260);
+            this.btnEight.Location = new System.Drawing.Point(85, 294);
             this.btnEight.Name = "btnEight";
             this.btnEight.Size = new System.Drawing.Size(76, 48);
             this.btnEight.TabIndex = 5;
@@ -177,7 +178,7 @@ namespace Project_Calculator
             this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNine.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnNine.Location = new System.Drawing.Point(164, 260);
+            this.btnNine.Location = new System.Drawing.Point(165, 294);
             this.btnNine.Name = "btnNine";
             this.btnNine.Size = new System.Drawing.Size(76, 48);
             this.btnNine.TabIndex = 6;
@@ -194,7 +195,7 @@ namespace Project_Calculator
             this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPercent.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPercent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnPercent.Location = new System.Drawing.Point(4, 154);
+            this.btnPercent.Location = new System.Drawing.Point(5, 188);
             this.btnPercent.Name = "btnPercent";
             this.btnPercent.Size = new System.Drawing.Size(76, 48);
             this.btnPercent.TabIndex = 7;
@@ -211,7 +212,7 @@ namespace Project_Calculator
             this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCE.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnCE.Location = new System.Drawing.Point(84, 154);
+            this.btnCE.Location = new System.Drawing.Point(85, 188);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(76, 48);
             this.btnCE.TabIndex = 8;
@@ -228,7 +229,7 @@ namespace Project_Calculator
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClr.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnClr.Location = new System.Drawing.Point(164, 154);
+            this.btnClr.Location = new System.Drawing.Point(165, 188);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(76, 48);
             this.btnClr.TabIndex = 9;
@@ -245,7 +246,7 @@ namespace Project_Calculator
             this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSix.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnSix.Location = new System.Drawing.Point(164, 313);
+            this.btnSix.Location = new System.Drawing.Point(165, 347);
             this.btnSix.Name = "btnSix";
             this.btnSix.Size = new System.Drawing.Size(76, 48);
             this.btnSix.TabIndex = 10;
@@ -262,7 +263,7 @@ namespace Project_Calculator
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiply.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMultiply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnMultiply.Location = new System.Drawing.Point(244, 260);
+            this.btnMultiply.Location = new System.Drawing.Point(245, 294);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(76, 48);
             this.btnMultiply.TabIndex = 11;
@@ -279,7 +280,7 @@ namespace Project_Calculator
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnDel.Location = new System.Drawing.Point(244, 154);
+            this.btnDel.Location = new System.Drawing.Point(245, 188);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(76, 48);
             this.btnDel.TabIndex = 12;
@@ -296,7 +297,7 @@ namespace Project_Calculator
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnMinus.Location = new System.Drawing.Point(244, 313);
+            this.btnMinus.Location = new System.Drawing.Point(245, 347);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(76, 48);
             this.btnMinus.TabIndex = 13;
@@ -313,7 +314,7 @@ namespace Project_Calculator
             this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnFour.Location = new System.Drawing.Point(4, 313);
+            this.btnFour.Location = new System.Drawing.Point(5, 347);
             this.btnFour.Name = "btnFour";
             this.btnFour.Size = new System.Drawing.Size(76, 48);
             this.btnFour.TabIndex = 14;
@@ -330,7 +331,7 @@ namespace Project_Calculator
             this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFive.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnFive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnFive.Location = new System.Drawing.Point(84, 313);
+            this.btnFive.Location = new System.Drawing.Point(85, 347);
             this.btnFive.Name = "btnFive";
             this.btnFive.Size = new System.Drawing.Size(76, 48);
             this.btnFive.TabIndex = 15;
@@ -347,7 +348,7 @@ namespace Project_Calculator
             this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOne.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnOne.Location = new System.Drawing.Point(4, 366);
+            this.btnOne.Location = new System.Drawing.Point(5, 400);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(76, 48);
             this.btnOne.TabIndex = 16;
@@ -364,7 +365,7 @@ namespace Project_Calculator
             this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTwo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnTwo.Location = new System.Drawing.Point(84, 366);
+            this.btnTwo.Location = new System.Drawing.Point(85, 400);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.Size = new System.Drawing.Size(76, 48);
             this.btnTwo.TabIndex = 17;
@@ -381,7 +382,7 @@ namespace Project_Calculator
             this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThree.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnThree.Location = new System.Drawing.Point(164, 366);
+            this.btnThree.Location = new System.Drawing.Point(165, 400);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(76, 48);
             this.btnThree.TabIndex = 21;
@@ -398,7 +399,7 @@ namespace Project_Calculator
             this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnPlus.Location = new System.Drawing.Point(244, 366);
+            this.btnPlus.Location = new System.Drawing.Point(245, 400);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(76, 48);
             this.btnPlus.TabIndex = 20;
@@ -415,7 +416,7 @@ namespace Project_Calculator
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEquals.ForeColor = System.Drawing.Color.Black;
-            this.btnEquals.Location = new System.Drawing.Point(244, 419);
+            this.btnEquals.Location = new System.Drawing.Point(245, 453);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(76, 48);
             this.btnEquals.TabIndex = 19;
@@ -432,7 +433,7 @@ namespace Project_Calculator
             this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSign.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnSign.Location = new System.Drawing.Point(4, 419);
+            this.btnSign.Location = new System.Drawing.Point(5, 453);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(76, 48);
             this.btnSign.TabIndex = 18;
@@ -476,7 +477,7 @@ namespace Project_Calculator
             this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnZero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnZero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnZero.Location = new System.Drawing.Point(84, 419);
+            this.btnZero.Location = new System.Drawing.Point(85, 453);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(76, 48);
             this.btnZero.TabIndex = 22;
@@ -493,7 +494,7 @@ namespace Project_Calculator
             this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDecimal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDecimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.btnDecimal.Location = new System.Drawing.Point(164, 419);
+            this.btnDecimal.Location = new System.Drawing.Point(165, 453);
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(76, 48);
             this.btnDecimal.TabIndex = 23;
@@ -510,7 +511,7 @@ namespace Project_Calculator
             this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMplus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMplus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
-            this.btnMplus.Location = new System.Drawing.Point(67, 117);
+            this.btnMplus.Location = new System.Drawing.Point(68, 151);
             this.btnMplus.Name = "btnMplus";
             this.btnMplus.Size = new System.Drawing.Size(65, 33);
             this.btnMplus.TabIndex = 24;
@@ -527,7 +528,7 @@ namespace Project_Calculator
             this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMminus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMminus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
-            this.btnMminus.Location = new System.Drawing.Point(131, 117);
+            this.btnMminus.Location = new System.Drawing.Point(132, 151);
             this.btnMminus.Name = "btnMminus";
             this.btnMminus.Size = new System.Drawing.Size(65, 33);
             this.btnMminus.TabIndex = 25;
@@ -544,7 +545,7 @@ namespace Project_Calculator
             this.btnMStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMStore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMStore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
-            this.btnMStore.Location = new System.Drawing.Point(255, 117);
+            this.btnMStore.Location = new System.Drawing.Point(256, 151);
             this.btnMStore.Name = "btnMStore";
             this.btnMStore.Size = new System.Drawing.Size(65, 33);
             this.btnMStore.TabIndex = 26;
@@ -558,7 +559,7 @@ namespace Project_Calculator
             this.DisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DisplayBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DisplayBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.DisplayBox.Location = new System.Drawing.Point(4, 54);
+            this.DisplayBox.Location = new System.Drawing.Point(5, 88);
             this.DisplayBox.Name = "DisplayBox";
             this.DisplayBox.Size = new System.Drawing.Size(316, 43);
             this.DisplayBox.TabIndex = 27;
@@ -574,7 +575,7 @@ namespace Project_Calculator
             this.btnMRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMRecall.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMRecall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
-            this.btnMRecall.Location = new System.Drawing.Point(195, 117);
+            this.btnMRecall.Location = new System.Drawing.Point(196, 151);
             this.btnMRecall.Name = "btnMRecall";
             this.btnMRecall.Size = new System.Drawing.Size(65, 33);
             this.btnMRecall.TabIndex = 29;
@@ -591,7 +592,7 @@ namespace Project_Calculator
             this.btnMClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(194)))), ((int)(((byte)(20)))));
-            this.btnMClear.Location = new System.Drawing.Point(4, 117);
+            this.btnMClear.Location = new System.Drawing.Point(5, 151);
             this.btnMClear.Name = "btnMClear";
             this.btnMClear.Size = new System.Drawing.Size(65, 33);
             this.btnMClear.TabIndex = 30;
@@ -605,19 +606,34 @@ namespace Project_Calculator
             this.ShowBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ShowBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShowBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(233)))));
-            this.ShowBox.Location = new System.Drawing.Point(15, 32);
+            this.ShowBox.Location = new System.Drawing.Point(16, 66);
             this.ShowBox.Name = "ShowBox";
             this.ShowBox.Size = new System.Drawing.Size(294, 22);
             this.ShowBox.TabIndex = 31;
             this.ShowBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ShowBox.TextChanged += new System.EventHandler(this.ShowBox_TextChanged);
             // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(299, 2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 25);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(327, 473);
+            this.ClientSize = new System.Drawing.Size(327, 510);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.ShowBox);
             this.Controls.Add(this.btnMClear);
             this.Controls.Add(this.btnMRecall);
@@ -650,6 +666,7 @@ namespace Project_Calculator
             this.Controls.Add(this.btnSqrd);
             this.Controls.Add(this.btnFrac);
             this.ForeColor = System.Drawing.Color.Lime;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Calculator";
@@ -695,6 +712,7 @@ namespace Project_Calculator
         private System.Windows.Forms.Button btnMRecall;
         private System.Windows.Forms.Button btnMClear;
         private System.Windows.Forms.TextBox ShowBox;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

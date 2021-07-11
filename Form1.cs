@@ -160,5 +160,10 @@ namespace Project_Calculator
                 DisplayBox.Font = new Font("Segoe UI", 14, FontStyle.Bold);
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
